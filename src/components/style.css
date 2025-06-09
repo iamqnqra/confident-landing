@@ -1,0 +1,12 @@
+:root {
+  --fm-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --fm-dm-sans: "DM Sans", sans-serif;
+  --fm-montserrat: "Montserrat", sans-serif;
+  --fm-serif-pro: "Source Serif Pro", serif;
+}
+
+body {
+  font-family: var(--fm-plus-jakarta-sans);
+  margin: 0;
+  justify-content: center;
+}
