@@ -6,7 +6,7 @@ export const Header = () => {
       <div className={styles.container}>
         <div className={styles.headerBody}>
           <a href="/" className={styles.logo}>
-            <img src="/logo.svg" width={163} height={44} alt="Logo Confident" />
+            <img src="/logo.svg" width={163} height={44} alt="Logo Confident Dental Care Clinic" />
           </a>
           <div className={styles.contacts}>
             <a
