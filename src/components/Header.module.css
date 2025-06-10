@@ -82,4 +82,5 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
