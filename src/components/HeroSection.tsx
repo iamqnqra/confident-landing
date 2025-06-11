@@ -5,8 +5,6 @@ export const HeroSection = () => {
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.heroBody}>
-          <div className={styles.gradientCircle}></div>
-          <div className={styles.secondGradientCircle}></div>
           <div className={styles.content}>
             <div className={styles.heading}>
               <h1 className={styles.welcomeText}>welcome to CONFIDENT</h1>
@@ -23,7 +21,7 @@ export const HeroSection = () => {
           </div>
           <div className={styles.buttons}>
             <button className={styles.contactUs}>contact us</button>
-            <a href="https://www.youtube.com/" className={styles.playButton}>
+            <a href="https://www.youtube.com/" className={styles.playButton} target="">
               <img
                 src="./play.svg"
                 width={38}
