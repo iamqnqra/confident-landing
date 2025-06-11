@@ -1,0 +1,158 @@
+.hero {
+  margin: 0;
+  background-color: #eff6ff;
+  left: 0;
+  width: 100%;
+  padding-top: 285px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.heroBody {
+  margin: 0;
+  position: relative;
+  padding-bottom: 390px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  max-width: 649px;
+  gap: 20px;
+}
+
+.heading {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.welcomeText {
+  margin: 0;
+  color: #ff9140;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.mainText {
+  margin: 0;
+  font-family: var(--fm-serif-pro);
+  font-size: 76px;
+  font-weight: 600;
+  color: #142349;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+}
+
+.blueText {
+  margin: 0;
+  font-family: var(--fm-serif-pro);
+  font-size: 76px;
+  font-weight: 600;
+  color: #3366ff;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+}
+
+.description {
+  max-width: 535px;
+  font-family: var(--fm-dm-sans);
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 30px;
+  color: #142349;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  top: 67.97px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 416px;
+  gap: 30px;
+}
+
+.contactUs {
+  display: flex;
+  padding: 10.5px 28px;
+  align-items: center;
+  background-color: #3366ff;
+  border-radius: 192px;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+  box-shadow: 1px 10px 12px #3177e13d;
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+}
+
+.watchText {
+  font-weight: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 500px;
+  color: #142349;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+.contentRight {
+  position: absolute;
+  left: 90%;
+  top: 0px;
+  overflow: hidden;
+}
+
+.gradientCircle {
+  position: absolute;
+  width: 517px;
+  height: 517px;
+  left: -139px;
+  top: 243px;
+  background: #45cdf7;
+  opacity: 0.12;
+  filter: blur(135.95px);
+}
+
+.secondGradientCircle {
+  position: absolute;
+  width: 587px;
+  height: 587px;
+  left: 840px;
+  top: 0;
+  background: #45cdf7;
+  opacity: 0.18;
+  filter: blur(135.95px);
+}
