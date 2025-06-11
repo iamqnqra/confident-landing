@@ -1,13 +1,11 @@
 import styles from "./Header.module.css";
 
 export const Header = () => {
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.headerBody}>
-         
-          <a href="/" className={styles.logo}>
+          <a href="/" className={styles.logo} target="true">
             <img
               src="/logo.svg"
               width={163}
@@ -19,6 +17,7 @@ export const Header = () => {
             <a
               href="https://www.google.com/maps/@51.134464,71.3981952,14z?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
               className={styles.location}
+              target="true"
             >
               <img
                 src="/location.svg"
