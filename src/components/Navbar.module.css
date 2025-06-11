@@ -1,6 +1,10 @@
 .nav {
-  margin-top: 30px;
-  padding: 0 16px;
+  padding-top: 30px;
+  background-color: #eff6ff;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
 }
 
 .navContainer {
@@ -14,12 +18,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 12px 52px;
 }
 
 .navElements {
+  max-width: 684px;
   display: flex;
   list-style: none;
   gap: 54px;
+  padding: 0;
+  margin: 0;
 }
 
 .navLink {
@@ -35,8 +43,6 @@
 }
 
 .searchWrapper {
-  padding: 12px 0;
-  margin-right: 52px;
   position: relative;
 }
 
@@ -44,6 +50,7 @@
   padding-top: 12px;
   padding-bottom: 11px;
   font-size: 15px;
+  font-weight: 300;
   line-height: 1;
   padding-left: 18px;
   padding-right: 18px;
@@ -58,6 +65,8 @@
   color: #a0b3e5;
   font-family: var(--fm-dm-sans);
   font-weight: 300;
+  font-size: 15px;
+  line-height: 1;
 }
 
 .searchButton {
@@ -66,6 +75,6 @@
   border-radius: 50px;
   border: none;
   position: absolute;
-  right: 5px;
-  top: 17px;
+  right: 6px;
+  top: 5px;
 }
