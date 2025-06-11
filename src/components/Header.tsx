@@ -1,12 +1,19 @@
 import styles from "./Header.module.css";
 
 export const Header = () => {
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.headerBody}>
+         
           <a href="/" className={styles.logo}>
-            <img src="/logo.svg" width={163} height={44} alt="Logo Confident Dental Care Clinic" />
+            <img
+              src="/logo.svg"
+              width={163}
+              height={44}
+              alt="Logo Confident Dental Care Clinic"
+            />
           </a>
           <div className={styles.contacts}>
             <a
