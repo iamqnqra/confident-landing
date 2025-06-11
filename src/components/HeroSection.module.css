@@ -48,6 +48,18 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
+.welcomeText::after {
+  content: "";
+  position: absolute;
+  width: 587px;
+  height: 587px;
+  left: 840px;
+  top: 0px;
+  background-color: #4583f7;
+  opacity: 0.18;
+  filter: blur(135.95px);
+  border-radius: 100%;
+}
 
 .mainText {
   margin: 0;
@@ -80,6 +92,19 @@
   color: #142349;
   letter-spacing: 0%;
   margin: 0;
+}
+
+.description::after {
+  content: "";
+  position: absolute;
+  width: 517px;
+  height: 517px;
+  left: -260px;
+  top: 239px;
+  background-color: #45cdf7;
+  opacity: 0.12;
+  filter: blur(135.95px);
+  border-radius: 100%;
 }
 
 .buttons {
@@ -133,26 +158,4 @@
   left: 90%;
   top: 0px;
   overflow: hidden;
-}
-
-.gradientCircle {
-  position: absolute;
-  width: 517px;
-  height: 517px;
-  left: -139px;
-  top: 243px;
-  background: #45cdf7;
-  opacity: 0.12;
-  filter: blur(135.95px);
-}
-
-.secondGradientCircle {
-  position: absolute;
-  width: 587px;
-  height: 587px;
-  left: 840px;
-  top: 0;
-  background: #45cdf7;
-  opacity: 0.18;
-  filter: blur(135.95px);
 }
