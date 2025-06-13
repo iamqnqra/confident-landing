@@ -1,0 +1,103 @@
+:root {
+  --fm-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --fm-dm-sans: "DM Sans", sans-serif;
+  --fm-montserrat: "Montserrat", sans-serif;
+  --fm-serif-pro: "Source Serif Pro", serif;
+}
+
+body {
+  font-family: var(--fm-plus-jakarta-sans);
+  margin: 0;
+  justify-content: center;
+}
+
+.header {
+  border-bottom: 1px solid #c2d1ff;
+  background-color: #eff6ff;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 16px 16px 15px 16px;
+  margin: 0 auto;
+}
+
+.headerBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.location {
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  max-width: 195px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.phone {
+  gap: 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.locationMean,
+.phoneNumber {
+  margin: 0;
+  font-family: var(--fm-dm-sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  letter-spacing: 0.02em;
+  color: #142349;
+  margin: 0;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.appointment {
+  display: flex;
+  padding: 10.5px 28px;
+  max-width: 186px;
+  width: 100%;
+  align-items: center;
+  background: #3366ff;
+  border-radius: 192px;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+}
