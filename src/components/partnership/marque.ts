@@ -1,0 +1,1 @@
+export { NewMarquee } from "./NewMarquee";
