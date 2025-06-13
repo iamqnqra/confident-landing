@@ -53,7 +53,7 @@ export const Navbar = () => {
             />
             <button className={styles.searchButton}>
               <img
-                src="./nav_img/search_icon.svg"
+                src="./navbar-img/search_icon.svg"
                 alt="icon"
                 width={19}
                 height={19}

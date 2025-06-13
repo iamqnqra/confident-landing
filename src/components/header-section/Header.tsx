@@ -7,7 +7,7 @@ export const Header = () => {
         <div className={styles.headerBody}>
           <a href="/" className={styles.logo} target="true">
             <img
-              src="./header_img/logo.svg"
+              src="./header-img/logo.svg"
               width={163}
               height={44}
               alt="Logo Confident Dental Care Clinic"
@@ -20,7 +20,7 @@ export const Header = () => {
               target="true"
             >
               <img
-                src="./header_img/location.svg"
+                src="./header-img/location.svg"
                 width={19}
                 height={24}
                 alt=""
@@ -33,7 +33,7 @@ export const Header = () => {
             </a>
             <a href="tel:+1234 - 4567 - 890" className={styles.phone}>
               <img
-                src="./header_img/phone.svg"
+                src="./header-img/phone.svg"
                 width={19}
                 height={19}
                 alt=""

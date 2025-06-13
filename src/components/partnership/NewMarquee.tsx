@@ -11,7 +11,7 @@ const NewMarquee = () => {
     >
       {PARTNERS.map((item) => (
         <img
-          src={`./partner_img/${item}.svg`}
+          src={`./partnership-img/${item}.svg`}
           className={styles.item}
           alt="brand logo"
         />

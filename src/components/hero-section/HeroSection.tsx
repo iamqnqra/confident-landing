@@ -27,7 +27,7 @@ export const HeroSection = () => {
               target=""
             >
               <img
-                src="./hero_img/play.svg"
+                src="./hero-img/play.svg"
                 width={38}
                 height={36}
                 alt="play button for video profile"
@@ -38,7 +38,7 @@ export const HeroSection = () => {
 
           <div className={styles.contentRight}>
             <img
-              src="./hero_img/main_img.svg"
+              src="./hero-img/main_img.svg"
               width={648}
               height={648}
               alt="doctor's characteristics"

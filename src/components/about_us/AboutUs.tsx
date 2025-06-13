@@ -15,7 +15,7 @@ export const AboutUs = () => {
           <div className={styles.contentLeft}>
             <img
               className={styles.imageDec}
-              src="./aboutUs_img/main2.svg"
+              src="./about-img/main2.svg"
               width={309}
               height={530}
               alt="doctor-woman"
