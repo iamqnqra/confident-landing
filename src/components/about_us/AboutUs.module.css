@@ -5,9 +5,7 @@
 
 .container {
   display: flex;
-  max-width: 1200px;
   padding-top: 120px;
-  margin: 0 auto;
 }
 
 .sectionBody {
@@ -18,27 +16,29 @@
 }
 
 .contentLeft {
-  padding-left: 84px;
+  padding: 60px 55px 30px 46px;
   max-width: 491px;
-  position: relative;
   align-items: center;
   margin: 0 auto;
+  position: relative;
+}
+
+.gradient {
+  position: relative;
+  min-width: 391px;
+  height: 434px;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #3366ff;
+  z-index: -8;
 }
 
 .imageDec {
   align-self: center;
-  margin: 0 auto;
-}
-
-.contentLeft::before {
-  content: "";
-  background-color: #3366ff;
-  top: 60px;
-  left: 46px;
-  width: 390px;
-  height: 434px;
+  padding: 0 35.26px 0 30px;
+  margin: 0;
   position: absolute;
-  border-radius: 22px;
+  bottom: 0px;
   z-index: -2;
 }
 
@@ -52,7 +52,7 @@
   border-radius: 50%;
   opacity: 0.04;
   background-color: #d9d9d9;
-  z-index: -1;
+  z-index: -6;
 }
 
 .card {
@@ -60,11 +60,17 @@
   flex-direction: column;
   position: absolute;
   top: 225px;
-  left: 18px;
+  left: -42px;
   max-width: 135px;
   background-color: #ffffff;
   border-radius: 5px;
   padding: 7px 14px 11px 30px;
+}
+
+.icon {
+  position: absolute;
+  top: -1px;
+  left: -25px;
 }
 
 .name {
@@ -86,12 +92,104 @@
   margin: 0;
 }
 
+.trustedCard {
+  padding: 12px 0 12px 12px;
+  max-width: 137px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  left: 290px;
+  top: 283px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 11.3px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+}
+
+.trustedCard::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  border-radius: 16px;
+  background: rgba(235, 170, 96, 0.2);
+  z-index: -1;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.avatar {
+  width: 28.15px;
+  height: 28.15px;
+  border-radius: 50%;
+  border: 3px solid #e4f0fc;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-left: -11px;
+  z-index: 2;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.more {
+  width: 30.54px;
+  height: 30.54px;
+  border-radius: 50%;
+  background-color: #ff8a00;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 28px;
+  margin-left: -12px;
+  z-index: 2;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #142349;
+  margin: 0;
+}
+
+.count {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #ff9140;
+  margin: 0;
+}
+
 .contentRight {
   max-width: 608px;
   padding-top: 60px;
   padding-bottom: 44px;
   position: relative;
-  left: 192.76px;
+  left: 102px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -99,7 +197,7 @@
 
 .contentRight::after {
   content: "";
-  left: -545px;
+  left: -554px;
   top: 102px;
   width: 401.18px;
   height: 389.34px;
@@ -107,12 +205,12 @@
   border-radius: 50%;
   opacity: 0.07;
   background-color: #d9d9d9;
-  z-index: -1;
+  z-index: -3;
 }
 
 .contentRight::before {
   content: "";
-  left: -504px;
+  left: -510px;
   top: 148px;
   width: 317px;
   height: 306px;
@@ -120,8 +218,9 @@
   border-radius: 50%;
   opacity: 0.11;
   background-color: #d9d9d9;
-  z-index: -1;
+  z-index: -4;
 }
+
 .heading {
   margin: 0;
   display: flex;
@@ -151,6 +250,9 @@
   text-transform: capitalize;
 }
 
+.blueText {
+  color: #3366ff;
+}
 .description {
   font-family: var(--fm-dm-sans);
   font-weight: 300;
@@ -162,11 +264,45 @@
 }
 
 .items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 20px 0px;
   font-family: var(--fm-dm-sans);
   font-weight: 500;
   font-size: 15px;
   line-height: 1;
   color: #142349;
   letter-spacing: 0;
+  padding-top: 20px;
   margin: 0;
+}
+
+.wordWithIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.link {
+  display: flex;
+  gap: 16px;
+  padding-top: 22px;
+  align-items: center;
+}
+
+.readMore {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #5c85ff;
+  text-decoration: none;
 }

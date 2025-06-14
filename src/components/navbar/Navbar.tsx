@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { Container } from "../../UIkit/Container";
 
 const LINKS = [
   {
@@ -30,7 +31,7 @@ const LINKS = [
 export const Navbar = () => {
   return (
     <nav className={styles.nav}>
-      <div className={styles.navContainer}>
+      <Container className={styles.navContainer}>
         <div className={styles.navBody}>
           <ul className={styles.navElements}>
             {LINKS.map((item) => (
@@ -61,7 +62,7 @@ export const Navbar = () => {
             </button>
           </div>
         </div>
-      </div>
+      </Container>
     </nav>
   );
 };

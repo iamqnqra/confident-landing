@@ -1,9 +1,10 @@
 import styles from "./Header.module.css";
+import { Container } from "../../UIkit/Container";
 
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <Container className={styles.container}>
         <div className={styles.headerBody}>
           <a href="/" className={styles.logo} target="true">
             <img
@@ -44,7 +45,7 @@ export const Header = () => {
             <button className={styles.appointment}>appointment</button>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };

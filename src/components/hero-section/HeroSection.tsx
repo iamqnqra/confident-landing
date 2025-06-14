@@ -1,18 +1,19 @@
 import styles from "./HeroSection.module.css";
+import { Container } from "../../UIkit/Container";
 
 export const HeroSection = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.container}>
+      <Container className={styles.container}>
         <div className={styles.heroBody}>
           <div className={styles.content}>
-            <div className={styles.heading}>
-              <h1 className={styles.welcomeText}>welcome to CONFIDENT</h1>
-              <h1 className={styles.mainText}>
+            <h1 className={styles.heading}>
+              <span className={styles.welcomeText}>welcome to CONFIDENT</span>
+              <span className={styles.mainText}>
                 high quality & <span className={styles.blueText}>painless</span>{" "}
                 dentistry
-              </h1>
-            </div>
+              </span>
+            </h1>
             <p className={styles.description}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
@@ -45,7 +46,7 @@ export const HeroSection = () => {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

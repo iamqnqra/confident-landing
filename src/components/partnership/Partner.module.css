@@ -4,9 +4,7 @@
 
 .container {
   display: flex;
-  max-width: 1200px;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 120px 120px 0 120px;
 }
 

@@ -1,4 +1,5 @@
 import styles from "./AboutUs.module.css";
+import { Container } from "../../UIkit/Container.tsx";
 
 const STRENGHS = [
   "Modern Equipment",
@@ -9,27 +10,62 @@ const STRENGHS = [
 
 export const AboutUs = () => {
   return (
-    <section className={styles.abotUs}>
-      <div className={styles.container}>
+    <section className={styles.aboutUs}>
+      <Container className={styles.container}>
         <div className={styles.sectionBody}>
           <div className={styles.contentLeft}>
-            <img
-              className={styles.imageDec}
-              src="./about-img/main2.svg"
-              width={309}
-              height={530}
-              alt="doctor-woman"
-            />
-            <div className={styles.card}>
-              <span className={styles.name}>Dr. Aubrey Clark</span>
-              <span className={styles.proff}>Dentist</span>
+            <div className={styles.gradient}>
+              <img
+                className={styles.imageDec}
+                src="./about-img/main2.svg"
+                width={309}
+                height={530}
+                alt="doctor-woman"
+              />
+              <div className={styles.card}>
+                <img
+                  className={styles.icon}
+                  src="./about-img/icon.svg"
+                  width={60}
+                  height={60}
+                  alt=""
+                  aria-hidden={true}
+                />
+                <span className={styles.name}>Dr. Aubrey Clark</span>
+                <span className={styles.proff}>Dentist</span>
+              </div>
+              <div className={styles.trustedCard}>
+                <div className={styles.avatars}>
+                  <img
+                    src="./about-img/avatar1.svg"
+                    alt="avatar"
+                    className={styles.avatar}
+                  />
+                  <img
+                    src="./about-img/avatar2.svg"
+                    alt="avatar"
+                    className={styles.avatar}
+                  />
+                  <img
+                    src="./about-img/avatar3.svg"
+                    alt="avatar"
+                    className={styles.avatar}
+                  />
+                  <div className={styles.more}>+</div>
+                </div>
+                <div className={styles.textBlock}>
+                  <p className={styles.label}>Trusted By</p>
+                  <p className={styles.count}>200+ Patients</p>
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.contentRight}>
             <div className={styles.heading}>
               <h2 className={styles.main}> About Us</h2>
               <h2 className={styles.mainText}>
-                your trusted partner for dental Health
+                your <span className={styles.blueText}>trusted partner</span>{" "}
+                for dental Health
               </h2>
             </div>
             <p className={styles.description}>
@@ -38,13 +74,35 @@ export const AboutUs = () => {
               both!
             </p>
             <div className={styles.items}>
-              {STRENGHS.map((item) => (
-                <span className={styles.itemsText}>{item}</span>
+              {STRENGHS.map((item, index) => (
+                <span key={index} className={styles.wordWithIcon}>
+                  <img
+                    src="./about-img/checkbox.svg"
+                    alt=""
+                    width={15}
+                    height={15}
+                    className={styles.inlineIcon}
+                    aria-hidden={true}
+                  />
+                  {item}
+                </span>
               ))}
+            </div>
+            <div className={styles.link}>
+              <a href="#" className={styles.readMore}>
+                READ MORE
+              </a>
+              <img
+                src="./about-img/arrow.svg"
+                width={14}
+                height={15}
+                alt=""
+                aria-hidden={true}
+              />
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

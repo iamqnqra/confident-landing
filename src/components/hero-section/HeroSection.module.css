@@ -9,8 +9,6 @@
 
 .container {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
   position: relative;
   justify-content: space-between;
   align-items: flex-start;
@@ -74,14 +72,7 @@
 }
 
 .blueText {
-  margin: 0;
-  font-family: var(--fm-serif-pro);
-  font-size: 76px;
-  font-weight: 600;
   color: #3366ff;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  text-transform: capitalize;
 }
 
 .description {
