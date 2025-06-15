@@ -3,6 +3,7 @@
   --fm-dm-sans: "DM Sans", sans-serif;
   --fm-montserrat: "Montserrat", sans-serif;
   --fm-serif-pro: "Source Serif Pro", serif;
+  position: relative;
 }
 
 body {

@@ -1,5 +1,5 @@
 import styles from "./AboutUs.module.css";
-import { Container } from "../../UIkit/Container.tsx";
+import { Container } from "../../shared/UIkit/Container/Container.tsx";
 
 const STRENGHS = [
   "Modern Equipment",
@@ -10,14 +10,14 @@ const STRENGHS = [
 
 export const AboutUs = () => {
   return (
-    <section className={styles.aboutUs}>
+    <section id="aboutUs" className={styles.aboutUs}>
       <Container className={styles.container}>
         <div className={styles.sectionBody}>
           <div className={styles.contentLeft}>
             <div className={styles.gradient}>
               <img
                 className={styles.imageDec}
-                src="./about-img/main2.svg"
+                src="./img/about/main2.svg"
                 width={309}
                 height={530}
                 alt="doctor-woman"
@@ -25,7 +25,7 @@ export const AboutUs = () => {
               <div className={styles.card}>
                 <img
                   className={styles.icon}
-                  src="./about-img/icon.svg"
+                  src="./img/about/icon.svg"
                   width={60}
                   height={60}
                   alt=""
@@ -37,17 +37,17 @@ export const AboutUs = () => {
               <div className={styles.trustedCard}>
                 <div className={styles.avatars}>
                   <img
-                    src="./about-img/avatar1.svg"
+                    src="./img/about/avatar1.svg"
                     alt="avatar"
                     className={styles.avatar}
                   />
                   <img
-                    src="./about-img/avatar2.svg"
+                    src="./img/about/avatar2.svg"
                     alt="avatar"
                     className={styles.avatar}
                   />
                   <img
-                    src="./about-img/avatar3.svg"
+                    src="./img/about/avatar3.svg"
                     alt="avatar"
                     className={styles.avatar}
                   />
@@ -77,7 +77,7 @@ export const AboutUs = () => {
               {STRENGHS.map((item, index) => (
                 <span key={index} className={styles.wordWithIcon}>
                   <img
-                    src="./about-img/checkbox.svg"
+                    src="./img/about/checkbox.svg"
                     alt=""
                     width={15}
                     height={15}
@@ -93,7 +93,7 @@ export const AboutUs = () => {
                 READ MORE
               </a>
               <img
-                src="./about-img/arrow.svg"
+                src="./img/about/arrow.svg"
                 width={14}
                 height={15}
                 alt=""

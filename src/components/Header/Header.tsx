@@ -1,14 +1,15 @@
 import styles from "./Header.module.css";
-import { Container } from "../../UIkit/Container";
+import { Container } from "../../shared/UIkit/Container/Container";
+import { Button } from "../../shared/UIkit/Button/Button";
 
 export const Header = () => {
   return (
     <header className={styles.header}>
       <Container className={styles.container}>
         <div className={styles.headerBody}>
-          <a href="/" className={styles.logo} target="true">
+          <a href="/" className={styles.logo}>
             <img
-              src="./header-img/logo.svg"
+              src="./img/header/logo.svg"
               width={163}
               height={44}
               alt="Logo Confident Dental Care Clinic"
@@ -21,7 +22,7 @@ export const Header = () => {
               target="true"
             >
               <img
-                src="./header-img/location.svg"
+                src="./img/header/location.svg"
                 width={19}
                 height={24}
                 alt=""
@@ -34,7 +35,7 @@ export const Header = () => {
             </a>
             <a href="tel:+1234 - 4567 - 890" className={styles.phone}>
               <img
-                src="./header-img/phone.svg"
+                src="./img/header/phone.svg"
                 width={19}
                 height={19}
                 alt=""
@@ -42,7 +43,7 @@ export const Header = () => {
               />
               <h4 className={styles.phoneNumber}>+1234 - 4567 - 890</h4>
             </a>
-            <button className={styles.appointment}>appointment</button>
+            <Button className={styles.appointment}>appointment</Button>
           </div>
         </div>
       </Container>

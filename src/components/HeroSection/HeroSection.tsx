@@ -1,9 +1,10 @@
 import styles from "./HeroSection.module.css";
-import { Container } from "../../UIkit/Container";
+import { Button } from "../../shared/UIkit/Button/Button";
+import { Container } from "../../shared/UIkit/Container/Container";
 
 export const HeroSection = () => {
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <Container className={styles.container}>
         <div className={styles.heroBody}>
           <div className={styles.content}>
@@ -21,14 +22,14 @@ export const HeroSection = () => {
             </p>
           </div>
           <div className={styles.buttons}>
-            <button className={styles.contactUs}>contact us</button>
+            <Button className={styles.contactUs}>contact us</Button>
             <a
               href="https://www.youtube.com/"
               className={styles.playButton}
               target=""
             >
               <img
-                src="./hero-img/play.svg"
+                src="./img/hero/play.svg"
                 width={38}
                 height={36}
                 alt="play button for video profile"
@@ -39,7 +40,7 @@ export const HeroSection = () => {
 
           <div className={styles.contentRight}>
             <img
-              src="./hero-img/main_img.svg"
+              src="./img/hero/main_img.svg"
               width={648}
               height={648}
               alt="doctor's characteristics"

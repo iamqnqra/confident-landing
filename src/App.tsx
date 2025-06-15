@@ -1,8 +1,8 @@
-import { Header } from "./components/header-section/Header";
-import { HeroSection } from "./components/hero-section/HeroSection";
-import { Navbar } from "./components/navbar/Navbar";
-import { Partner } from "./components/partnership/Partner";
-import { AboutUs } from "./components/about_us/AboutUs";
+import { Header } from "./components/Header/Header";
+import { HeroSection } from "./components/HeroSection/HeroSection";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Partner } from "./components/Partner/Partner";
+import { AboutUs } from "./components/AboutUs/AboutUs";
 
 export function App() {
   return (

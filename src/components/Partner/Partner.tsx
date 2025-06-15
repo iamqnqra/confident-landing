@@ -1,6 +1,6 @@
 import { NewMarquee } from "./NewMarquee";
 import styles from "./Partner.module.css";
-import { Container } from "../../UIkit/Container";
+import { Container } from "../../shared/UIkit/Container/Container";
 
 export const Partner = () => {
   return (

@@ -8,10 +8,11 @@ const NewMarquee = () => {
       gradientColor="rgb(255, 255, 255)"
       gradientWidth={90}
       speed={40}
+      pauseOnHover
     >
       {PARTNERS.map((item) => (
         <img
-          src={`./partnership-img/${item}.svg`}
+          src={`./img/partnership/${item}.svg`}
           className={styles.item}
           alt="brand logo"
         />

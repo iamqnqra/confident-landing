@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "src/components/navbar/Navbar.tsx", "shared/UI-kit"]
+  "include": ["src", "src/components/Navbar/Navbar.tsx", "shared/UI-kit"]
 }

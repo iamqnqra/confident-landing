@@ -1,30 +1,30 @@
 import styles from "./Navbar.module.css";
-import { Container } from "../../UIkit/Container";
+import { Container } from "../../shared/UIkit/Container/Container";
 
 const LINKS = [
   {
     label: "Home",
-    href: "/",
+    href: "#hero",
   },
   {
     label: "About Us",
-    href: "/",
+    href: "#aboutUs",
   },
   {
     label: "Services",
-    href: "/",
+    href: "#services",
   },
   {
     label: "Pages",
-    href: "/",
+    href: "#pages",
   },
   {
     label: "Blog",
-    href: "/",
+    href: "#blog",
   },
   {
     label: "Contact",
-    href: "/",
+    href: "#contact",
   },
 ];
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
             />
             <button className={styles.searchButton}>
               <img
-                src="./navbar-img/search_icon.svg"
+                src="./img/navbar/search_icon.svg"
                 alt="icon"
                 width={19}
                 height={19}
