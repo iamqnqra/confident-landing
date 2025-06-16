@@ -6,20 +6,22 @@
 }
 
 body {
-  font-family: var(--fm-plus-jakarta-sans);
-  margin: 0;
   justify-content: center;
+  margin: 0;
+  font-family: var(--fm-plus-jakarta-sans);
 }
 
 .header {
-  border-bottom: 1px solid #c2d1ff;
-  background-color: #eff6ff;
-  margin: 0;
-  padding: 0;
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #c2d1ff;
+
+  background-color: #eff6ff;
 }
 
 .container {
@@ -28,8 +30,9 @@ body {
 
 .headerBody {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
   margin: 0;
   padding: 0;
 }
@@ -41,36 +44,42 @@ body {
 }
 
 .location {
-  gap: 12px;
   cursor: pointer;
-  text-decoration: none;
+
   display: flex;
-  max-width: 195px;
+  gap: 12px;
   align-items: center;
+
+  max-width: 195px;
   margin: 0;
   padding: 0;
+
+  text-decoration: none;
 }
 
 .phone {
-  gap: 12px;
-  text-decoration: none;
   display: flex;
+  gap: 12px;
   align-items: center;
+
   margin: 0;
   padding: 0;
+
+  text-decoration: none;
 }
 
 .locationMean,
 .phoneNumber {
-  margin: 0;
-  font-family: var(--fm-dm-sans);
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   display: flex;
-  letter-spacing: 0.02em;
-  color: #142349;
+
   margin: 0;
+  
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #142349;
+  letter-spacing: 0.02em;
 }
 
 .contacts {
@@ -81,6 +90,6 @@ body {
 }
 
 .appointment {
-  max-width: 186px;
   width: 100%;
+  max-width: 186px;
 }

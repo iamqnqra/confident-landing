@@ -9,30 +9,32 @@
 }
 
 .sectionBody {
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 60px;
+  align-items: center;
+
+  max-width: 1200px;
 }
 
 .heading {
-  color: #ff9140;
+  margin: 0;
+
   font-family: var(--fm-plus-jakarta-sans);
-  font-weight: 700;
   font-size: 19px;
+  font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0.15em;
+  color: #ff9140;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  letter-spacing: 0.15em;
 }
 
 .partnerLogos {
-  max-width: 1200px;
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  max-width: 1200px;
 }
 
 .item {

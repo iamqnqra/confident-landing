@@ -1,17 +1,21 @@
 .buttons {
-  display: flex;
-  padding: 10.5px 28px;
-  align-items: center;
-  background-color: #3366ff;
-  border-radius: 192px;
-  font-family: var(--fm-plus-jakarta-sans);
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 19px;
-  letter-spacing: 0.15em;
-  color: #ffffff;
-  border: none;
   cursor: pointer;
-  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+
   margin: 0;
+  padding: 10.5px 28px;
+  border: none;
+  border-radius: 192px;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+
+  background-color: #3366ff;
 }

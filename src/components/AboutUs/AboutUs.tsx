@@ -89,16 +89,16 @@ export const AboutUs = () => {
               ))}
             </div>
             <div className={styles.link}>
-              <a href="#" className={styles.readMore}>
+              <a href="#" className={styles.readMore} target="true">
                 READ MORE
+                <img
+                  src="./img/about/arrow.svg"
+                  width={14}
+                  height={15}
+                  alt=""
+                  aria-hidden={true}
+                />
               </a>
-              <img
-                src="./img/about/arrow.svg"
-                width={14}
-                height={15}
-                alt=""
-                aria-hidden={true}
-              />
             </div>
           </div>
         </div>

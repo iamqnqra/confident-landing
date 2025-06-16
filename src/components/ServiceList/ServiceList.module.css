@@ -1,0 +1,131 @@
+.serviceList {
+  justify-content: center;
+}
+
+.container {
+  max-width: 1320px;
+  padding-top: 120px;
+}
+
+.serviceBody {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 60px 100px 60px;
+  background-color: #eff6ff;
+  border-radius: 25px;
+  gap: 80px;
+  justify-content: center;
+  box-shadow: 0 0 4px rgb(153, 178, 214);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 491px;
+  align-items: center;
+}
+
+.main {
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff9140;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.mainText {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  font-family: var(--fm-serif-pro);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  color: #142349;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  text-align: center;
+  gap: 15px;
+}
+
+.blueText {
+  color: #3366ff;
+}
+
+.gridCards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(6, 166px);
+  justify-content: center;
+  grid-auto-rows: 333px;
+}
+
+.cardTop {
+  grid-column: span 3;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 53px 26px 30px;
+}
+
+.cardBottom {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px 53px 26px 30px;
+  grid-column: span 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serviceName {
+  margin: 0;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #142349;
+}
+
+.serviceDescrip {
+  margin: 0;
+  font-family: var(--fm-dm-sans);
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #142349;
+}
+
+.serviceLink {
+  display: flex;
+  align-items: center;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #5c85ff;
+  gap: 6px;
+  text-decoration: none;
+}

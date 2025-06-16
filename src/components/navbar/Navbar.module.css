@@ -1,15 +1,17 @@
 .nav {
-  padding-top: 30px;
-  background-color: #eff6ff;
   position: absolute;
   top: 70px;
   left: 0;
+
   width: 100%;
+  padding-top: 30px;
+
+  background-color: #eff6ff;
 }
 
 .navContainer {
-  background-color: #c7f0fd;
   border-radius: 52px;
+  background-color: #c7f0fd;
 }
 
 .navBody {
@@ -20,19 +22,21 @@
 }
 
 .navElements {
-  max-width: 684px;
   display: flex;
-  list-style: none;
   gap: 54px;
-  padding: 0;
+
+  max-width: 684px;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .navLink {
-  font-size: 15px;
   font-family: var(--fm-plus-jakarta-sans);
-  text-decoration: none;
+  font-size: 15px;
   color: #142349;
+  text-decoration: none;
   letter-spacing: 0.15em;
 }
 
@@ -45,35 +49,41 @@
 }
 
 .searchInput {
+  position: relative;
+
+  width: 304px;
   padding-top: 12px;
+  padding-right: 18px;
   padding-bottom: 11px;
+  padding-left: 18px;
+  border: none;
+  border-radius: 82px;
+
   font-size: 15px;
   font-weight: 300;
   line-height: 1;
-  padding-left: 18px;
-  padding-right: 18px;
+
   background: #ffffff;
-  border: none;
-  border-radius: 82px;
-  position: relative;
-  width: 304px;
 }
 
 .searchInput::placeholder {
-  color: #a0b3e5;
   font-family: var(--fm-dm-sans);
-  font-weight: 300;
   font-size: 15px;
+  font-weight: 300;
   line-height: 1;
+  color: #a0b3e5;
 }
 
 .searchButton {
-  padding: 4px 7px;
-  background-color: #3366ff;
-  border-radius: 50px;
-  border: none;
-  position: absolute;
-  right: 6px;
-  top: 5px;
   cursor: pointer;
+
+  position: absolute;
+  top: 5px;
+  right: 6px;
+
+  padding: 4px 7px;
+  border: none;
+  border-radius: 50px;
+
+  background-color: #3366ff;
 }

@@ -1,0 +1,143 @@
+.statistics {
+  justify-content: center;
+}
+
+.container {
+  max-width: 1320px;
+  padding-top: 120px;
+}
+
+.statBody {
+  display: flex;
+  flex-direction: column;
+  padding: 84px 120px 84px 120px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  gap: 80px;
+  box-shadow: 0 0px 43.1px rgba(135, 135, 135, 0.1);
+}
+
+.grid {
+  display: grid;
+  max-width: 1080px;
+  grid-template-columns: 220px 320px 320px 220px;
+  grid-auto-rows: 124px;
+  position: relative;
+}
+
+.grid::after {
+  content: "";
+
+  position: absolute;
+  top: -100px;
+  left: -340px;
+
+  width: 517px;
+  height: 517px;
+  border-radius: 100%;
+  opacity: 0.07;
+  z-index: -1;
+
+  background-color: #45cdf7;
+  filter: blur(271.9px);
+}
+
+.grid::before {
+  content: "";
+
+  position: absolute;
+  top: -180px;
+  left: 840px;
+
+  width: 517px;
+  height: 517px;
+  border-radius: 100%;
+  z-index: -1;
+  opacity: 0.08;
+
+  background-color: #45cdf7;
+  filter: blur(271.9px);
+}
+.contentFirst {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-right: 1px solid #c2d1ff;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #c2d1ff;
+}
+
+.contentLast {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.number {
+  font-family: var(--fm-serif-pro);
+  font-weight: 600;
+  font-size: 113px;
+  line-height: 92px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #8fe1fa;
+  position: relative;
+}
+
+.description1 {
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 20px;
+  top: 53px;
+  z-index: 1;
+}
+
+.description2 {
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 331px;
+  top: 53px;
+}
+
+.description3 {
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 670px;
+  top: 53px;
+}
+
+.description4 {
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 972px;
+  top: 53px;
+}

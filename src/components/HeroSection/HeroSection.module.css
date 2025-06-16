@@ -1,74 +1,85 @@
 .hero {
-  margin: 0;
-  background-color: #eff6ff;
   left: 0;
-  width: 100%;
-  padding-top: 285px;
+
   overflow: hidden;
+
+  width: 100%;
+  margin: 0;
+  padding-top: 285px;
+
+  background-color: #eff6ff;
 }
 
 .container {
-  display: flex;
   position: relative;
-  justify-content: space-between;
+
+  display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+
   padding: 0 16px;
 }
 
 .heroBody {
-  margin: 0;
   position: relative;
+  margin: 0;
   padding-bottom: 390px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  max-width: 649px;
   gap: 20px;
+
+  max-width: 649px;
+  margin: 0;
 }
 
 .heading {
-  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin: 0;
 }
 
 .welcomeText {
   margin: 0;
-  color: #ff9140;
+
   font-family: var(--fm-plus-jakarta-sans);
-  font-weight: 700;
   font-size: 19px;
+  font-weight: 700;
   line-height: 1;
+  color: #ff9140;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
 .welcomeText::after {
   content: "";
+
   position: absolute;
+  top: 0px;
+  left: 840px;
+
   width: 587px;
   height: 587px;
-  left: 840px;
-  top: 0px;
-  background-color: #4583f7;
-  opacity: 0.18;
-  filter: blur(135.95px);
   border-radius: 100%;
+
+  opacity: 0.18;
+  background-color: #4583f7;
+  filter: blur(135.95px);
 }
 
 .mainText {
   margin: 0;
+
   font-family: var(--fm-serif-pro);
   font-size: 76px;
   font-weight: 600;
-  color: #142349;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  color: #142349;
   text-transform: capitalize;
+  letter-spacing: -0.04em;
 }
 
 .blueText {
@@ -77,36 +88,42 @@
 
 .description {
   max-width: 535px;
+  margin: 0;
+
   font-family: var(--fm-dm-sans);
-  font-weight: 300;
   font-size: 19px;
+  font-weight: 300;
   line-height: 30px;
   color: #142349;
   letter-spacing: 0%;
-  margin: 0;
 }
 
 .description::after {
   content: "";
+
   position: absolute;
+  top: 239px;
+  left: -260px;
+
   width: 517px;
   height: 517px;
-  left: -260px;
-  top: 239px;
-  background-color: #45cdf7;
-  opacity: 0.12;
-  filter: blur(135.95px);
   border-radius: 100%;
+
+  opacity: 0.12;
+  background-color: #45cdf7;
+  filter: blur(135.95px);
 }
 
 .buttons {
-  display: flex;
+  position: relative;
   top: 67.97px;
+
+  display: flex;
+  gap: 30px;
+
+  max-width: 416px;
   margin: 0;
   padding: 0;
-  position: relative;
-  max-width: 416px;
-  gap: 30px;
 }
 
 .contactUs {
@@ -115,24 +132,24 @@
 
 .playButton {
   display: flex;
+  gap: 12px;
   align-items: center;
   text-decoration: none;
-  gap: 12px;
 }
 
 .watchText {
-  font-weight: var(--fm-dm-sans);
   font-size: 15px;
-  font-weight: 500px;
+  font-weight: var(--fm-dm-sans);
+  font-weight: 500;
+  line-height: 1;
   color: #142349;
   text-transform: capitalize;
-  line-height: 1;
   letter-spacing: 0.06em;
 }
 
 .contentRight {
   position: absolute;
-  left: 90%;
   top: 0px;
+  left: 90%;
   overflow: hidden;
 }

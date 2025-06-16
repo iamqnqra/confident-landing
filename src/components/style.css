@@ -3,11 +3,12 @@
   --fm-dm-sans: "DM Sans", sans-serif;
   --fm-montserrat: "Montserrat", sans-serif;
   --fm-serif-pro: "Source Serif Pro", serif;
+
   position: relative;
 }
 
 body {
-  font-family: var(--fm-plus-jakarta-sans);
-  margin: 0;
   justify-content: center;
+  margin: 0;
+  font-family: var(--fm-plus-jakarta-sans);
 }
