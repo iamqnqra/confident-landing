@@ -7,7 +7,7 @@ export const Statistics = () => {
       <Container className={styles.container}>
         <div className={styles.statBody}>
           <div className={styles.grid}>
-            <div className={styles.contentFirst}>
+            <div className={styles.content}>
               <span className={styles.number}> 74 </span>
               <span className={styles.description1}> Clinics</span>
             </div>
@@ -19,7 +19,7 @@ export const Statistics = () => {
               <span className={styles.number}> 19 </span>
               <span className={styles.description3}> Years</span>
             </div>
-            <div className={styles.contentLast}>
+            <div className={styles.content}>
               <span className={styles.number}> 40 </span>
               <span className={styles.description4}> Partners</span>
             </div>

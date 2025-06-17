@@ -5,6 +5,7 @@ import { Partner } from "./components/Partner/Partner";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { ServiceList } from "./components/ServiceList/ServiceList";
 import { Statistics } from "./components/Statistics/Statistics";
+import { DentistList } from "./components/DentistsList/DentistsList";
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
       <AboutUs />
       <ServiceList />
       <Statistics />
+      <DentistList/>
     </>
   );
 }

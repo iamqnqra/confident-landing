@@ -11,6 +11,8 @@
 .sectionBody {
   display: flex;
   justify-content: space-between;
+
+  max-width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -195,8 +197,8 @@
   width: 517px;
   height: 517px;
   border-radius: 100%;
-  opacity: 0.2;
 
+  opacity: 0.2;
   background-color: #45cdf7;
   filter: blur(271.9px);
 }
@@ -357,6 +359,7 @@
 
 .readMore {
   display: flex;
+  gap: 16px;
   align-items: center;
 
   font-family: var(--fm-plus-jakarta-sans);
@@ -368,5 +371,4 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  gap: 16px;
 }
