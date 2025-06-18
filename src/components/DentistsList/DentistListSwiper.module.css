@@ -1,0 +1,145 @@
+.swiperContainer {
+  align-self: center;
+  max-width: 1036px;
+}
+
+.swiperInit{
+  padding-top: 40px;
+}
+
+.swiperBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: blue;
+}
+
+.swiperCard {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+
+  max-width: 290px;
+  height: 320px;
+  margin: 0;
+  padding: 15px;
+  border-radius: 15px;
+
+  background-color: rgba(182, 228, 242, 0.3);
+
+  transition: transform 0.3s ease-in-out 0s, scale 0.3s ease-in-out 0s;
+}
+
+.swiperCardContent {
+  position: relative;
+  z-index: 0;
+  top: -45px;
+
+  max-width: 258px;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.swiperDoctorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: fit-content;
+}
+
+.doctorName {
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1;
+  color: #3366ff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.15em;
+}
+
+.jobTitle {
+  margin: 0;
+
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 10;
+  top: 70%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #5c85ff;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.swiperButtonPrev {
+  left: 158px;
+}
+
+.swiperButtonNext {
+  right: 158px;
+}
+
+.swiperButtonPrev::before,
+.swiperButtonNext::before {
+  content: "";
+
+  transform: rotate(45deg);
+
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #5c85ff;
+  border-left: 2px solid #5c85ff;
+}
+
+.swiperButtonNext::before {
+  transform: rotate(-135deg);
+}
+
+.swiperButtonPrev::after,
+.swiperButtonNext::after {
+  display: none;
+}
+
+.socialContacts{
+  display: flex;
+  gap: 17px;
+
+  max-width: 215px;
+  margin: 0;
+  padding: 0;
+}

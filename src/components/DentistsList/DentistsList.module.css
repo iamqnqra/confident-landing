@@ -1,20 +1,28 @@
 .dentists {
   position: absolute;
+
+    display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+
   width: 100%;
+  margin: 0 auto;
 }
 
 .container {
-  padding-top: 120px;
   display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 120px;
 }
 
 .sectionBody {
   display: flex;
   flex-direction: column;
   gap: 80px;
-  justify-content: space-between;
+  justify-content: center;
+
+  width: 100%;
   max-width: 1200px;
   padding: 0;
 }

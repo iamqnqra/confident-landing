@@ -129,6 +129,8 @@
   gap: 6px;
   align-items: center;
 
+  max-width: 139px;
+
   font-family: var(--fm-plus-jakarta-sans);
   font-size: 15px;
   font-weight: 600;
@@ -137,5 +139,4 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  max-width: 139px;
 }

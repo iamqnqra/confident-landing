@@ -1,0 +1,27 @@
+.swiperInit .swiper-slide-active .swiperCard{
+     transform: translateY(-40px);
+  scale: 1;
+}
+
+.swiperInit .swiper-pagination {
+  position: relative;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.swiperInit .swiper-pagination-bullet {
+  width: 13.97px;
+  height: 13.97px;
+  margin: 0;
+  background-color: #ffd3b3;
+}
+
+.swiperInit .swiper-pagination-bullet-active {
+  width: 52px;
+  margin: 0;
+  border-radius: 16px;
+
+  background-color: #ff9140;
+
+  transition: all 0.2s ease-out;
+}
