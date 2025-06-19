@@ -1,0 +1,132 @@
+.testimonial {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  margin-top: 120px;
+
+  background-color: #eff6ff;
+}
+
+.testimonialContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 0 16px;
+}
+
+.testimonialBody {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 100px 120px 100px 120px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  max-width: 500px;
+  margin: 0;
+}
+
+.headingMain {
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff9140;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.headingMainText {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 0;
+
+  font-family: var(--fm-serif-pro);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  color: #142349;
+  text-transform: capitalize;
+  letter-spacing: -0.04em;
+}
+
+.blueText {
+  color: #3366ff;
+}
+
+.testimonialGradient {
+  position: relative;
+}
+
+.headingMainText::after {
+  content: "";
+
+  position: absolute;
+  z-index: 1;
+  top: 240px;
+  left: 50px;
+
+  width: 100%;
+  max-width: 293.1px;
+  height: 299.6px;
+  border-radius: 100%;
+
+  opacity: 0.25;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+}
+
+.headingMainText::before {
+  content: "";
+
+  position: absolute;
+  z-index: 1;
+  top: 290px;
+  left: 100px;
+
+  width: 100%;
+  max-width: 194.7px;
+  height: 201.4px;
+  border-radius: 100%;
+
+  opacity: 0.38;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+}
+
+.avatar {
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialGradient::after {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  left: 0;
+
+  width: 100%;
+  max-width: 394.3px;
+  height: 409.1px;
+  border-radius: 100%;
+
+  opacity: 0.12;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+}

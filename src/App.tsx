@@ -6,6 +6,8 @@ import { AboutUs } from "./components/AboutUs/AboutUs";
 import { ServiceList } from "./components/ServiceList/ServiceList";
 import { Statistics } from "./components/Statistics/Statistics";
 import { DentistList } from "./components/DentistsList/DentistsList";
+import { Booking } from "./components/Booking/Booking";
+import { Testimonial } from "./components/Testimonial/Testimonial";
 
 export function App() {
   return (
@@ -17,7 +19,9 @@ export function App() {
       <AboutUs />
       <ServiceList />
       <Statistics />
-      <DentistList/>
+      <DentistList />
+      <Booking />
+      <Testimonial />
     </>
   );
 }

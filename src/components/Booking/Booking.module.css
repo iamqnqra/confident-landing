@@ -1,0 +1,160 @@
+.bookingAd {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.bookingContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1320px;
+  padding: 120px 16px 0 16px;
+}
+
+.sectionBody {
+  overflow: hidden;
+  display: flex;
+
+  width: 100%;
+  max-width: 1320px;
+  padding-top: 60px;
+}
+
+.adContainer {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+  max-width: 1320px;
+  margin: 0;
+  padding: 60px 56px 56px 60px;
+  border-radius: 25px;
+
+  background-color: #c7f0fd;
+}
+
+.adContainer::before {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  right: -70px;
+  bottom: -110px;
+
+  width: 607px;
+  height: 613.5px;
+  border-radius: 50%;
+
+  opacity: 0.12;
+  background-color: #ffffff;
+}
+
+.adContainer::after {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  right: -15px;
+  bottom: -65px;
+
+  width: 498.6px;
+  height: 507.8px;
+  border-radius: 50%;
+
+  opacity: 0.2;
+  background-color: #ffffff;
+}
+
+.bookingOffer {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 616px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+}
+
+.headingMain {
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ff9140;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.headingMainText {
+  margin: 0;
+
+  font-family: var(--fm-serif-pro);
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #142349;
+  text-transform: capitalize;
+  letter-spacing: -0.04em;
+}
+
+.blueText {
+  color: #3366ff;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 3px;
+}
+
+.headingDescription {
+  margin: 0;
+
+  font-family: var(--fm-dm-sans);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #142349;
+  letter-spacing: 0;
+}
+
+.bookNowButton {
+  position: relative;
+
+  display: flex;
+  gap: 6px;
+
+  max-width: 185px;
+  margin-top: 10px;
+}
+
+.bookNowButton::after {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  bottom: -80px;
+  left: 820px;
+
+  width: 412.8px;
+  height: 407.5px;
+  border-radius: 50%;
+
+  opacity: 0.28;
+  background-color: #ffffff;
+}
+
+.containerRight {
+  position: absolute;
+  z-index: 1;
+  right: 56px;
+  bottom: 0;
+
+  width: 390px;
+  height: 559px;
+  margin: 0;
+}
