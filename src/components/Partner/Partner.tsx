@@ -7,7 +7,7 @@ export const Partner = () => {
     <section className={styles.partnerSection}>
       <Container className={styles.container}>
         <div className={styles.sectionBody}>
-          <h2 className={styles.heading}>our clinic partners</h2>
+          <h2 className={styles.partnerHeading}>our clinic partners</h2>
           <div className={styles.partnerLogos}>
             <NewMarquee />
           </div>

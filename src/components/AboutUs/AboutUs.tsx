@@ -11,69 +11,69 @@ const STRENGHS = [
 export const AboutUs = () => {
   return (
     <section id="aboutUs" className={styles.aboutUs}>
-      <Container className={styles.container}>
-        <div className={styles.sectionBody}>
+      <Container className={styles.aboutUscontainer}>
+        <div className={styles.aboutUssectionBody}>
           <div className={styles.contentLeft}>
-            <div className={styles.gradient}>
+            <div className={styles.aboutUsgradient}>
               <img
-                className={styles.imageDec}
+                className={styles.aboutUsimage}
                 src="./img/about/main2.svg"
                 width={309}
                 height={530}
                 alt="doctor-woman"
               />
-              <div className={styles.card}>
+              <div className={styles.imageCard}>
                 <img
-                  className={styles.icon}
+                  className={styles.imageIcon}
                   src="./img/about/icon.svg"
                   width={60}
                   height={60}
                   alt=""
                   aria-hidden={true}
                 />
-                <span className={styles.name}>Dr. Aubrey Clark</span>
-                <span className={styles.proff}>Dentist</span>
+                <span className={styles.imageDoctorName}>Dr. Aubrey Clark</span>
+                <span className={styles.imageDoctorProff}>Dentist</span>
               </div>
-              <div className={styles.trustedCard}>
-                <div className={styles.avatars}>
+              <div className={styles.imageTrustedCard}>
+                <div className={styles.trustedCardAvatars}>
                   <img
                     src="./img/about/avatar1.svg"
                     alt="avatar"
-                    className={styles.avatar}
+                    className={styles.trustedCardAvatar}
                   />
                   <img
                     src="./img/about/avatar2.svg"
                     alt="avatar"
-                    className={styles.avatar}
+                    className={styles.trustedCardAvatar}
                   />
                   <img
                     src="./img/about/avatar3.svg"
                     alt="avatar"
-                    className={styles.avatar}
+                    className={styles.trustedCardAvatar}
                   />
                   <div className={styles.more}>+</div>
                 </div>
                 <div className={styles.textBlock}>
-                  <p className={styles.label}>Trusted By</p>
-                  <p className={styles.count}>200+ Patients</p>
+                  <p className={styles.textBlockLabel}>Trusted By</p>
+                  <p className={styles.textBlockCount}>200+ Patients</p>
                 </div>
               </div>
             </div>
           </div>
           <div className={styles.contentRight}>
             <div className={styles.heading}>
-              <h2 className={styles.main}> About Us</h2>
-              <h2 className={styles.mainText}>
+              <h2 className={styles.headingMain}> About Us</h2>
+              <h2 className={styles.headingMainText}>
                 your <span className={styles.blueText}>trusted partner</span>{" "}
                 for dental Health
               </h2>
             </div>
-            <p className={styles.description}>
+            <p className={styles.headingDescription}>
               Our team is dedicated to providing the best possible dental care
               for you. A healthy smile is a happy smile – we help you achieve
               both!
             </p>
-            <div className={styles.items}>
+            <div className={styles.contentItems}>
               {STRENGHS.map((item, index) => (
                 <span key={index} className={styles.wordWithIcon}>
                   <img
@@ -88,7 +88,7 @@ export const AboutUs = () => {
                 </span>
               ))}
             </div>
-            <div className={styles.link}>
+            <div className={styles.aboutUsReadMorelink}>
               <a href="#" className={styles.readMore} target="true">
                 READ MORE
                 <img

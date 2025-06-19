@@ -3,7 +3,7 @@
   max-width: 1036px;
 }
 
-.swiperInit{
+.swiperInit {
   padding-top: 40px;
 }
 
@@ -71,7 +71,7 @@
   letter-spacing: 0.15em;
 }
 
-.jobTitle {
+.doctorJobTitle {
   margin: 0;
 
   font-family: var(--fm-dm-sans);
@@ -88,7 +88,7 @@
 
   position: absolute;
   z-index: 10;
-  top: 70%;
+  top: 4173.02px;
   transform: translateY(-50%);
 
   display: flex;
@@ -135,7 +135,7 @@
   display: none;
 }
 
-.socialContacts{
+.socialContacts {
   display: flex;
   gap: 17px;
 

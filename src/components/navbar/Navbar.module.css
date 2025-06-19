@@ -10,6 +10,7 @@
 }
 
 .navContainer {
+  padding: 0 16px;
   border-radius: 52px;
   background-color: #c7f0fd;
 }
@@ -44,11 +45,11 @@
   color: #3366ff;
 }
 
-.searchWrapper {
+.navSearchWrapper {
   position: relative;
 }
 
-.searchInput {
+.navSearchInput {
   position: relative;
 
   width: 304px;
@@ -66,7 +67,7 @@
   background: #ffffff;
 }
 
-.searchInput::placeholder {
+.navSearchInput::placeholder {
   font-family: var(--fm-dm-sans);
   font-size: 15px;
   font-weight: 300;
@@ -74,7 +75,7 @@
   color: #a0b3e5;
 }
 
-.searchButton {
+.navSearchButton {
   cursor: pointer;
 
   position: absolute;

@@ -10,7 +10,7 @@
   background-color: #eff6ff;
 }
 
-.container {
+.heroContainer {
   position: relative;
 
   display: flex;
@@ -26,7 +26,7 @@
   padding-bottom: 390px;
 }
 
-.content {
+.heroTextContent {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -35,14 +35,14 @@
   margin: 0;
 }
 
-.heading {
+.heroHeading {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin: 0;
 }
 
-.welcomeText {
+.headingWelcomeText {
   overflow: hidden;
 
   margin: 0;
@@ -56,7 +56,7 @@
   letter-spacing: 0.15em;
 }
 
-.welcomeText::after {
+.headingWelcomeText::after {
   content: "";
 
   position: absolute;
@@ -72,7 +72,7 @@
   filter: blur(135.95px);
 }
 
-.mainText {
+.headingMainText {
   margin: 0;
 
   font-family: var(--fm-serif-pro);
@@ -88,7 +88,7 @@
   color: #3366ff;
 }
 
-.description {
+.heroDescription {
   max-width: 535px;
   margin: 0;
 
@@ -100,7 +100,7 @@
   letter-spacing: 0%;
 }
 
-.description::after {
+.heroDescription::after {
   content: "";
 
   position: absolute;
@@ -116,7 +116,7 @@
   filter: blur(135.95px);
 }
 
-.buttons {
+.heroContentButtons {
   position: relative;
   top: 67.97px;
 
@@ -128,7 +128,7 @@
   padding: 0;
 }
 
-.contactUs {
+.contactUsButton {
   box-shadow: 1px 10px 12px #3177e13d;
 }
 
@@ -139,7 +139,7 @@
   text-decoration: none;
 }
 
-.watchText {
+.heroWatchText {
   font-size: 15px;
   font-weight: var(--fm-dm-sans);
   font-weight: 500;

@@ -4,24 +4,24 @@ import { Container } from "../../shared/UIkit/Container/Container";
 export const Statistics = () => {
   return (
     <section className={styles.statistics}>
-      <Container className={styles.container}>
+      <Container className={styles.statContainer}>
         <div className={styles.statBody}>
-          <div className={styles.grid}>
-            <div className={styles.content}>
-              <span className={styles.number}> 74 </span>
-              <span className={styles.description1}> Clinics</span>
+          <div className={styles.statMainGrid}>
+            <div className={styles.statgridContent}>
+              <span className={styles.gridInfoNumber}> 74 </span>
+              <span className={styles.infoDescription1}> Clinics</span>
             </div>
-            <div className={styles.content}>
-              <span className={styles.number}> 20 </span>
-              <span className={styles.description2}> Country</span>
+            <div className={styles.statgridContent}>
+              <span className={styles.gridInfoNumber}> 20 </span>
+              <span className={styles.infoDescription2}> Country</span>
             </div>
-            <div className={styles.content}>
-              <span className={styles.number}> 19 </span>
-              <span className={styles.description3}> Years</span>
+            <div className={styles.statgridContent}>
+              <span className={styles.gridInfoNumber}> 19 </span>
+              <span className={styles.infoDescription3}> Years</span>
             </div>
-            <div className={styles.content}>
-              <span className={styles.number}> 40 </span>
-              <span className={styles.description4}> Partners</span>
+            <div className={styles.statgridContent}>
+              <span className={styles.gridInfoNumber}> 40 </span>
+              <span className={styles.infoDescription4}> Partners</span>
             </div>
           </div>
         </div>

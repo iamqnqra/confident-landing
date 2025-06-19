@@ -4,12 +4,12 @@ import { Container } from "../../shared/UIkit/Container/Container";
 
 export const DentistList = () => {
   return (
-    <section className={styles.dentists}>
-      <Container className={styles.container}>
+    <section id="dentists" className={styles.dentists}>
+      <Container className={styles.dentistsContainer}>
         <div className={styles.sectionBody}>
           <div className={styles.heading}>
-            <h2 className={styles.main}>OUR BEST DENTIST</h2>
-            <h2 className={styles.mainText}>
+            <h2 className={styles.headingMain}>OUR BEST DENTIST</h2>
+            <h2 className={styles.headingMainText}>
               <span className={styles.mainTextsplit}>
                 Dentist For Specialized And
               </span>

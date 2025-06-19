@@ -37,13 +37,13 @@ body {
   padding: 0;
 }
 
-.logo {
+.headerLogo {
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
 
-.location {
+.headerLocation {
   cursor: pointer;
 
   display: flex;
@@ -57,7 +57,7 @@ body {
   text-decoration: none;
 }
 
-.phone {
+.headerContactPhone {
   display: flex;
   gap: 12px;
   align-items: center;
@@ -68,12 +68,12 @@ body {
   text-decoration: none;
 }
 
-.locationMean,
-.phoneNumber {
+.headerLocationMean,
+.headerPhoneNumber {
   display: flex;
 
   margin: 0;
-  
+
   font-family: var(--fm-dm-sans);
   font-size: 15px;
   font-weight: 300;
@@ -82,14 +82,14 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contacts {
+.headerContacts {
   display: flex;
   gap: 40px;
   margin: 0;
   padding: 0;
 }
 
-.appointment {
+.headerAppointmentButton {
   width: 100%;
   max-width: 186px;
 }

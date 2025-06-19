@@ -5,24 +5,26 @@ import { Container } from "../../shared/UIkit/Container/Container";
 export const HeroSection = () => {
   return (
     <section id="hero" className={styles.hero}>
-      <Container className={styles.container}>
+      <Container className={styles.heroContainer}>
         <div className={styles.heroBody}>
-          <div className={styles.content}>
-            <h1 className={styles.heading}>
-              <span className={styles.welcomeText}>welcome to CONFIDENT</span>
-              <span className={styles.mainText}>
+          <div className={styles.heroTextContent}>
+            <h1 className={styles.heroHeading}>
+              <span className={styles.headingWelcomeText}>
+                welcome to CONFIDENT
+              </span>
+              <span className={styles.headingMainText}>
                 high quality & <span className={styles.blueText}>painless</span>{" "}
                 dentistry
               </span>
             </h1>
-            <p className={styles.description}>
+            <p className={styles.heroDescription}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
               ad minim veniam, quis nostrud.
             </p>
           </div>
-          <div className={styles.buttons}>
-            <Button className={styles.contactUs}>contact us</Button>
+          <div className={styles.heroContentButtons}>
+            <Button className={styles.contactUsButton}>contact us</Button>
             <a
               href="https://www.youtube.com/"
               className={styles.playButton}
@@ -34,7 +36,7 @@ export const HeroSection = () => {
                 height={36}
                 alt="play button for video profile"
               />
-              <span className={styles.watchText}>watch video profile</span>
+              <span className={styles.heroWatchText}>watch video profile</span>
             </a>
           </div>
 

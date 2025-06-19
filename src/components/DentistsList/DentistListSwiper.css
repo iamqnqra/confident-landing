@@ -1,5 +1,5 @@
-.swiperInit .swiper-slide-active .swiperCard{
-     transform: translateY(-40px);
+.swiperInit .swiper-slide-active .swiperCard {
+  transform: translateY(-40px);
   scale: 1;
 }
 

@@ -3,22 +3,21 @@ import Container from "../../shared/UIkit/Container/Container";
 
 export const ServiceList = () => {
   return (
-    <section id="services" className={styles.service}>
-      <Container className={styles.container}>
+    <section id="services" className={styles.serviceList}>
+      <Container className={styles.serviceContainer}>
         <div className={styles.serviceBody}>
           <div className={styles.heading}>
-            <h2 className={styles.main}>what we provide</h2>
-            <h2 className={styles.mainText}>
-              <span className={styles.mainTextsplit}>
-                {" "}
+            <h2 className={styles.headingMain}>what we provide</h2>
+            <h2 className={styles.headingMainText}>
+              <span>
                 What <span className={styles.blueText}>the Treatments</span>
-              </span>{" "}
-              <span className={styles.split}>Do We Offer?</span>
+              </span>
+              <span>Do We Offer?</span>
             </h2>
           </div>
-          <div className={styles.gridCards}>
-            <div className={styles.cardTop}>
-              <div className={styles.content}>
+          <div className={styles.serviceGridCards}>
+            <div className={styles.serviceCardTop}>
+              <div className={styles.cardContent}>
                 <img
                   src="./img/service/card1.svg"
                   width={86}
@@ -26,7 +25,7 @@ export const ServiceList = () => {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className={styles.textarea}>
+                <div className={styles.cardTextArea}>
                   <h3 className={styles.serviceName}>lawn fertilization</h3>
                   <p className={styles.serviceDescrip}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -43,8 +42,8 @@ export const ServiceList = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.cardTop}>
-              <div className={styles.content}>
+            <div className={styles.serviceCardTop}>
+              <div className={styles.cardContent}>
                 <img
                   src="./img/service/card2.svg"
                   width={86}
@@ -52,7 +51,7 @@ export const ServiceList = () => {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className={styles.textarea}>
+                <div className={styles.cardTextArea}>
                   <h3 className={styles.serviceName}>lawn fertilization</h3>
                   <p className={styles.serviceDescrip}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -70,8 +69,8 @@ export const ServiceList = () => {
               </div>
             </div>
 
-            <div className={styles.cardBottom}>
-              <div className={styles.content}>
+            <div className={styles.serviceCardBottom}>
+              <div className={styles.cardContent}>
                 <img
                   src="./img/service/card3.svg"
                   width={86}
@@ -79,7 +78,7 @@ export const ServiceList = () => {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className={styles.textarea}>
+                <div className={styles.cardTextArea}>
                   <h3 className={styles.serviceName}>lawn fertilization</h3>
                   <p className={styles.serviceDescrip}>
                     Lorem ipsum dolor sit amet, consectetur.
@@ -95,8 +94,8 @@ export const ServiceList = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.cardBottom}>
-              <div className={styles.content}>
+            <div className={styles.serviceCardBottom}>
+              <div className={styles.cardContent}>
                 <img
                   src="./img/service/card4.svg"
                   width={86}
@@ -104,7 +103,7 @@ export const ServiceList = () => {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className={styles.textarea}>
+                <div className={styles.cardTextArea}>
                   <h3 className={styles.serviceName}>lawn fertilization</h3>
                   <p className={styles.serviceDescrip}>
                     Lorem ipsum dolor sit amet, consectetur.
@@ -120,8 +119,8 @@ export const ServiceList = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.cardBottom}>
-              <div className={styles.content}>
+            <div className={styles.serviceCardBottom}>
+              <div className={styles.cardContent}>
                 <img
                   src="./img/service/card5.svg"
                   width={86}
@@ -129,7 +128,7 @@ export const ServiceList = () => {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className={styles.textarea}>
+                <div className={styles.cardTextArea}>
                   <h3 className={styles.serviceName}>lawn fertilization</h3>
                   <p className={styles.serviceDescrip}>
                     Lorem ipsum dolor sit amet, consectetur.

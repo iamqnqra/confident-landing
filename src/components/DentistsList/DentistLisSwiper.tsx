@@ -154,11 +154,16 @@ export const Slider = () => {
         {slideData.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className={`${styles.swiperCard} swiperCard`}>
-              <img src={slide.imgSrc} width={289} height={274} alt="" />
+              <img
+                src={slide.imgSrc}
+                width={289}
+                height={274}
+                alt="doctor's photos"
+              />
               <div className={styles.swiperCardContent}>
                 <div className={styles.swiperDoctorInfo}>
                   <h3 className={styles.doctorName}>{slide.name}</h3>
-                  <span className={styles.jobTitle}>{slide.status}</span>
+                  <span className={styles.doctorJobTitle}>{slide.status}</span>
                   {slide.socialContacts && (
                     <ul className={styles.socialContacts}>
                       {slide.socialContacts.map((contact) => (

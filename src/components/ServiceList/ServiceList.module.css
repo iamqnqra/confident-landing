@@ -1,11 +1,12 @@
 .serviceList {
-  position: absolute;
+  display: flex;
   justify-content: center;
 }
 
-.container {
+.serviceContainer {
   max-width: 1320px;
-  padding-top: 120px;
+  margin: 0;
+  padding: 120px 16px 0 16px;
 }
 
 .serviceBody {
@@ -31,7 +32,7 @@
   margin: 0 auto;
 }
 
-.main {
+.headingMain {
   margin: 0;
 
   font-family: var(--fm-plus-jakarta-sans);
@@ -43,7 +44,7 @@
   letter-spacing: 0.15em;
 }
 
-.mainText {
+.headingMainText {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -64,7 +65,7 @@
   color: #3366ff;
 }
 
-.gridCards {
+.serviceGridCards {
   display: grid;
   grid-auto-rows: 333px;
   grid-template-columns: repeat(6, 166px);
@@ -75,27 +76,27 @@
   margin: 0 auto;
 }
 
-.cardTop {
+.serviceCardTop {
   grid-column: span 3;
   padding: 30px 53px 26px 30px;
   border-radius: 15px;
   background-color: #fff;
 }
 
-.cardBottom {
+.serviceCardBottom {
   grid-column: span 2;
   padding: 30px 53px 26px 30px;
   border-radius: 15px;
   background-color: #fff;
 }
 
-.content {
+.cardContent {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.textarea {
+.cardTextArea {
   display: flex;
   flex-direction: column;
   gap: 20px;

@@ -16,7 +16,7 @@ const LINKS = [
   },
   {
     label: "Pages",
-    href: "#pages",
+    href: "#dentists",
   },
   {
     label: "Blog",
@@ -45,14 +45,14 @@ export const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className={styles.searchWrapper}>
+          <div className={styles.navSearchWrapper}>
             <input
               type="search"
               name="searcher"
               placeholder="Search In here"
-              className={styles.searchInput}
+              className={styles.navSearchInput}
             />
-            <button className={styles.searchButton}>
+            <button className={styles.navSearchButton}>
               <img
                 src="./img/navbar/search_icon.svg"
                 alt="icon"

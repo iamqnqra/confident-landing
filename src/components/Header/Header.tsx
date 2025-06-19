@@ -7,7 +7,7 @@ export const Header = () => {
     <header className={styles.header}>
       <Container className={styles.container}>
         <div className={styles.headerBody}>
-          <a href="/" className={styles.logo}>
+          <a href="/" className={styles.headerLogo}>
             <img
               src="./img/header/logo.svg"
               width={163}
@@ -15,10 +15,10 @@ export const Header = () => {
               alt="Logo Confident Dental Care Clinic"
             />
           </a>
-          <div className={styles.contacts}>
+          <div className={styles.headerContacts}>
             <a
               href="https://www.google.com/maps/@51.134464,71.3981952,14z?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
-              className={styles.location}
+              className={styles.headerLocation}
               target="true"
             >
               <img
@@ -28,12 +28,15 @@ export const Header = () => {
                 alt=""
                 aria-hidden="true"
               />
-              <span className={styles.locationMean}>
+              <span className={styles.headerLocationMean}>
                 {" "}
                 St. Sanguin Number 40
               </span>
             </a>
-            <a href="tel:+1234 - 4567 - 890" className={styles.phone}>
+            <a
+              href="tel:+1234 - 4567 - 890"
+              className={styles.headerContactPhone}
+            >
               <img
                 src="./img/header/phone.svg"
                 width={19}
@@ -41,9 +44,13 @@ export const Header = () => {
                 alt=""
                 aria-hidden="true"
               />
-              <h4 className={styles.phoneNumber}>+1234 - 4567 - 890</h4>
+              <span className={styles.headerPhoneNumber}>
+                +1234 - 4567 - 890
+              </span>
             </a>
-            <Button className={styles.appointment}>appointment</Button>
+            <Button className={styles.headerAppointmentButton}>
+              appointment
+            </Button>
           </div>
         </div>
       </Container>

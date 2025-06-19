@@ -1,11 +1,15 @@
 .partnerSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   color: #ffffff;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 120px 120px 0 120px;
+  margin: 0;
+  padding: 120px 16px 0 16px;
 }
 
 .sectionBody {
@@ -17,7 +21,7 @@
   max-width: 1200px;
 }
 
-.heading {
+.partnerHeading {
   margin: 0;
 
   font-family: var(--fm-plus-jakarta-sans);
@@ -37,6 +41,6 @@
   max-width: 1200px;
 }
 
-.item {
+.partnerMarqueeItem {
   padding: 0 20px;
 }
