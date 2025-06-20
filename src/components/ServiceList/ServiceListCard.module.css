@@ -1,0 +1,65 @@
+.serviceCardTop {
+  grid-column: span 3;
+  padding: 30px 53px 26px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.serviceCardBottom {
+  grid-column: span 2;
+  padding: 30px 53px 26px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cardTextArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serviceName {
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+  color: #142349;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.serviceDescrip {
+  margin: 0;
+
+  font-family: var(--fm-dm-sans);
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #142349;
+  letter-spacing: 0;
+}
+
+.serviceLink {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+
+  max-width: 139px;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #5c85ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
