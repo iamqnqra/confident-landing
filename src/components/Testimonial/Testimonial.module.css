@@ -15,13 +15,15 @@
 
   width: 100%;
   padding: 0 16px;
+  margin: 0;
+  padding: 100px 120px;
 }
 
 .testimonialBody {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  padding: 100px 120px 100px 120px;
+  gap: 100px;
+  width: 100%;
 }
 
 .heading {
@@ -67,8 +69,76 @@
   color: #3366ff;
 }
 
-.testimonialGradient {
+.imageContent {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 472px;
+  left: -30px;
+  top: 70px;
+}
+
+.imageContentWrapper {
+  position: absolute;
+  z-index: 3;
+  top: -55px;
+  left: 140px;
+}
+
+.imageContentWrapper1 {
+  position: absolute;
+  z-index: 3;
+  right: 27px;
+  bottom: 10px;
+}
+
+.imageCard {
+  background-color: #ffffff;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 13.22px 16.35px;
+
+  font-family: var(--fm-dm-sans);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 11px;
+  display: flex;
+  text-transform: capitalize;
+  color: #142349;
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.29);
+}
+
+.testimonialImage1 {
+  position: relative;
+  max-width: 472px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 10px;
+  z-index: 2;
+}
+
+.checkbox {
+  position: absolute;
+  bottom: 15px;
+  right: 80px;
+}
+
+.checkbox1 {
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+}
+
+.testimonialImage2 {
+  position: relative;
+  object-fit: cover;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  gap: 10px;
+  z-index: 2;
 }
 
 .headingMainText::after {
@@ -108,19 +178,19 @@
 }
 
 .avatar {
-  border: 8px solid #ffffff;
+  border: 7px solid #ffffff;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.testimonialGradient::after {
+.testimonialImage1::after {
   content: "";
 
   position: absolute;
   z-index: 0;
-  left: 0;
-
+  left: 30px;
+  top: -85px;
   width: 100%;
   max-width: 394.3px;
   height: 409.1px;
