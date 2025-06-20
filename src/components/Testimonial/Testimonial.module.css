@@ -14,8 +14,8 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 0 16px;
   margin: 0;
+  padding: 0 16px;
   padding: 100px 120px;
 }
 
@@ -71,12 +71,14 @@
 
 .imageContent {
   position: relative;
+  top: 70px;
+  left: -30px;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   max-width: 472px;
-  left: -30px;
-  top: 70px;
 }
 
 .imageContentWrapper {
@@ -94,51 +96,57 @@
 }
 
 .imageCard {
-  background-color: #ffffff;
-  border-radius: 6px;
+  display: flex;
+
   width: fit-content;
   padding: 13.22px 16.35px;
+  border-radius: 6px;
 
   font-family: var(--fm-dm-sans);
-  font-weight: 500;
   font-size: 15px;
+  font-weight: 500;
   line-height: 11px;
-  display: flex;
-  text-transform: capitalize;
   color: #142349;
+  text-transform: capitalize;
+
+  background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.29);
 }
 
 .testimonialImage1 {
   position: relative;
-  max-width: 472px;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  gap: 10px;
   z-index: 2;
+
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  justify-content: end;
+
+  max-width: 472px;
 }
 
 .checkbox {
   position: absolute;
-  bottom: 15px;
   right: 80px;
+  bottom: 15px;
 }
 
 .checkbox1 {
   position: absolute;
-  left: 70px;
   bottom: 0;
+  left: 70px;
 }
 
 .testimonialImage2 {
   position: relative;
-  object-fit: cover;
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  gap: 10px;
   z-index: 2;
+
+  display: flex;
+  gap: 10px;
+  align-items: end;
+  justify-content: start;
+
+  object-fit: cover;
 }
 
 .headingMainText::after {
@@ -189,8 +197,9 @@
 
   position: absolute;
   z-index: 0;
-  left: 30px;
   top: -85px;
+  left: 30px;
+
   width: 100%;
   max-width: 394.3px;
   height: 409.1px;
