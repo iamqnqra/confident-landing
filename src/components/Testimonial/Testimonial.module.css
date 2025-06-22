@@ -69,6 +69,13 @@
   color: #3366ff;
 }
 
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
 .imageContent {
   position: relative;
   top: 70px;
@@ -208,4 +215,18 @@
   opacity: 0.12;
   background-color: #ffffff;
   box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+}
+
+.contentRight {
+  display: flex;
+  justify-content: center;
+}
+
+.serviceGridCards {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  width: 100%;
+  gap: 30px;
+  max-width: 700px;
 }

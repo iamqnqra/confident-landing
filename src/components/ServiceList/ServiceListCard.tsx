@@ -43,8 +43,8 @@ const CardItem = [
 export const ServiceCard = () => {
   return (
     <>
-      {CardItem.map((card, idx) => (
-        <div className={card.className} key={idx}>
+      {CardItem.map((card, index) => (
+        <div className={card.className} key={index}>
           <div className={styles.cardContent}>
             <img
               src={card.imageSrc}
