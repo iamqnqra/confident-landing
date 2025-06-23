@@ -12,3 +12,8 @@ body {
   margin: 0;
   font-family: var(--fm-plus-jakarta-sans);
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}

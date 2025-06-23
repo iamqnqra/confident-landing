@@ -1,4 +1,4 @@
-import styles from "./HeroSection.module.css";
+import styles from "./Hero.module.css";
 import { Button } from "../../shared/UIkit/Button/Button";
 import { Container } from "../../shared/UIkit/Container/Container";
 

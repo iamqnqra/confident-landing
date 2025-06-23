@@ -44,19 +44,24 @@ export const TestimonialCard = () => {
           <img
             src={card.avatar}
             alt={card.name}
-            width={88}
-            height={81}
+            width={98}
+            height={91}
             className={styles.avatar}
           />
-          <div className={styles.stars}>
-            {[...Array(5)].map((_, i) => (
-              <FaStar key={i} color={i < card.rating ? "#FF9140" : "#FFD3B3"} />
-            ))}
-          </div>
-          <p className={styles.description}>{card.description}</p>
-          <div className={styles.patientsInfo}>
-            <span className={styles.name}>{card.name}</span>
-            <span className={styles.role}>{card.role}</span>
+          <div className={styles.cardContent}>
+            <div className={styles.stars}>
+              {[...Array(5)].map((_, idx) => (
+                <FaStar
+                  key={idx}
+                  color={idx < card.rating ? "#FF9140" : "#FFD3B3"}
+                />
+              ))}
+            </div>
+            <p className={styles.description}>{card.description}</p>
+            <div className={styles.patientsInfo}>
+              <span className={styles.name}>{card.name}</span>
+              <span className={styles.role}>{card.role}</span>
+            </div>
           </div>
         </div>
       ))}

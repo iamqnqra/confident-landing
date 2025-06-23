@@ -38,6 +38,7 @@ const slideData = [
             />
           </svg>
         ),
+        className: styles.socialIcons,
       },
       {
         href: "https://www.facebook.com/",
@@ -49,19 +50,17 @@ const slideData = [
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <ellipse
-              cx="20.5"
-              cy="20.0254"
-              rx="20.5"
-              ry="20.0009"
-              fill="#3366FF"
+            <path
+              d="M20.5 0.512329C31.5574 0.512329 40.5 9.2548 40.5 20.0133C40.5 30.7718 31.5574 39.5143 20.5 39.5143C9.44264 39.5143 0.500042 30.7718 0.5 20.0133C0.5 9.2548 9.44262 0.512329 20.5 0.512329Z"
+              stroke="#3366FF"
             />
             <path
-              d="M22.7956 30.0259V20.9174H26.3496L26.8779 17.3511H22.7956V15.0795C22.7956 14.0504 23.1273 13.3459 24.8355 13.3459H27V10.1663C25.9468 10.0687 24.8882 10.0216 23.8291 10.0252C20.6877 10.0252 18.5308 11.6833 18.5308 14.7272V17.3444H15V20.9107H18.5386V30.0259H22.7956Z"
-              fill="white"
+              d="M22.7956 30.0137V20.9052H26.3496L26.8779 17.3389H22.7956V15.0673C22.7956 14.0382 23.1273 13.3336 24.8355 13.3336H27V10.1541C25.9468 10.0565 24.8882 10.0094 23.829 10.013C20.6877 10.013 18.5308 11.6711 18.5308 14.715V17.3322H15V20.8985H18.5386V30.0137H22.7956Z"
+              fill="#3366FF"
             />
           </svg>
         ),
+        className: styles.socialIcons,
       },
       {
         href: "https://ru.linkedin.com/",
@@ -83,6 +82,7 @@ const slideData = [
             />
           </svg>
         ),
+        className: styles.socialIcons,
       },
       {
         href: "https://x.com/",
@@ -104,6 +104,7 @@ const slideData = [
             />
           </svg>
         ),
+        className: styles.socialIcons,
       },
     ],
   },
@@ -167,7 +168,12 @@ export const Slider = () => {
                   {slide.socialContacts && (
                     <ul className={styles.socialContacts}>
                       {slide.socialContacts.map((contact) => (
-                        <a href={contact.href} key={contact.href} target="true">
+                        <a
+                          href={contact.href}
+                          key={contact.href}
+                          target="_blank"
+                          className={contact.className}
+                        >
                           {contact.icon}
                         </a>
                       ))}

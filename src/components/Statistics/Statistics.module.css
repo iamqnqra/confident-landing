@@ -1,4 +1,6 @@
 .statistics {
+  position: relative;
+
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -22,7 +24,6 @@
   border-radius: 25px;
 
   background-color: #ffffff;
-  box-shadow: 0 0px 43.1px rgba(135, 135, 135, 0.1);
 }
 
 .statMainGrid {
@@ -47,7 +48,7 @@
   height: 517px;
   border-radius: 100%;
 
-  opacity: 0.07;
+  opacity: 0.4;
   background-color: #45cdf7;
   filter: blur(271.9px);
 }
@@ -64,7 +65,7 @@
   height: 517px;
   border-radius: 100%;
 
-  opacity: 0.1;
+  opacity: 0.4;
   background-color: #45cdf7;
   filter: blur(271.9px);
 }

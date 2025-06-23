@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 const PARTNERS = ["first", "second", "third", "fourth", "fifth"];
-import styles from "./Partner.module.css";
+import styles from "../Partner.module.css";
 const NewMarquee = () => {
   return (
     <Marquee

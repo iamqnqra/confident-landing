@@ -1,45 +1,60 @@
 .card {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   max-width: 306px;
+  margin: auto;
+  padding: 59px 33px 20px 22px;
+  border-radius: 12px;
+
+  text-align: left;
+
   background: #ffffff;
   box-shadow: 0px 0px 25.9px rgba(14, 41, 81, 0.02);
-  border-radius: 12px;
-  padding: 56px 24px 24px;
-  text-align: left;
-  margin: auto;
-  gap: 20px;
 }
 
 .card:nth-child(odd) {
-  margin-top: 30px;
+  margin-top: 55px;
+}
+
+.cardContent {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+
+  max-width: 251px;
 }
 
 .avatar {
   position: absolute;
-  top: -32px;
-  left: 15px;
+  top: -35px;
+  left: 10px;
   object-fit: cover;
 }
 
 .stars {
   display: flex;
   gap: 4px;
-  color: #ff9140;
   font-size: 18px;
+  color: #ff9140;
 }
 
 .description {
-  font-family: var(--fm-dm-sans);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #142349;
   margin: 0;
+
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  color: #142349;
+  letter-spacing: 0.02em;
 }
 
 .patientsInfo {
@@ -49,19 +64,21 @@
 }
 
 .name {
+  margin: 0;
+
   font-family: var(--fm-dm-sans);
-  font-weight: 500;
   font-size: 15px;
+  font-weight: 500;
   line-height: 20px;
   color: #3366ff;
-  margin: 0;
 }
 
 .role {
+  margin: 0;
+
   font-family: var(--fm-dm-sans);
-  font-weight: 300;
   font-size: 12px;
+  font-weight: 300;
   line-height: 20px;
   color: #7688b6;
-  margin: 0;
 }

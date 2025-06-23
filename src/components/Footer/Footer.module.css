@@ -1,0 +1,111 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #c7f0fd;
+}
+
+.footerContainer {
+  margin: 0 auto;
+  padding: 60px 120px 58px 120px;
+}
+
+.footerBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footerOffer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+}
+
+.footerSearchWrapper {
+  position: relative;
+}
+
+.footerSearchInput {
+  position: relative;
+
+  width: 289px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 11px;
+  padding-left: 18px;
+  border: none;
+  border-radius: 82px;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+
+  background: #ffffff;
+}
+
+.footerSearchInput::placeholder {
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+  color: #a0b3e5;
+}
+
+.footerSearchButton {
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  left: 245px;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 33px;
+  padding: 0;
+  border: 1px solid #5c85ff;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.footerSearchButton::after {
+  content: "";
+
+  transform: rotate(225deg);
+
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #5c85ff;
+  border-left: 2px solid #5c85ff;
+}
+
+.socialItems {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.socialContacts {
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+
+  max-width: 215px;
+  margin: 0;
+  padding: 0;
+}

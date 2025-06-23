@@ -1,5 +1,5 @@
 import styles from "./DentistsList.module.css";
-import { Slider } from "./DentistLisSwiper";
+import { Slider } from "./DentistListSwiper/DentistLisSwiper";
 import { Container } from "../../shared/UIkit/Container/Container";
 
 export const DentistList = () => {
@@ -17,7 +17,7 @@ export const DentistList = () => {
             </h2>
           </div>
 
-          <Slider></Slider>
+          <Slider />
         </div>
       </Container>
     </section>

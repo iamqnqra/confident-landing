@@ -1,4 +1,4 @@
-import { NewMarquee } from "./NewMarquee";
+import { NewMarquee } from "./NewMarquee/NewMarquee";
 import styles from "./Partner.module.css";
 import { Container } from "../../shared/UIkit/Container/Container";
 

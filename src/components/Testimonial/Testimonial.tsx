@@ -1,6 +1,6 @@
 import Container from "../../shared/UIkit/Container/Container";
 import styles from "./Testimonial.module.css";
-import { TestimonialCard } from "./TestimonialCard";
+import { TestimonialCard } from "./TestimonialCard/TestimonialCard";
 
 export const Testimonial = () => {
   return (

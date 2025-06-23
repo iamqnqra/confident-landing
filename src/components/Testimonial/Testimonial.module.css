@@ -22,7 +22,7 @@
 .testimonialBody {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 40px;
   width: 100%;
 }
 
@@ -71,14 +71,13 @@
 
 .contentWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 2fr;
   align-items: start;
 }
 
 .imageContent {
   position: relative;
-  top: 70px;
+  top: 140px;
   left: -30px;
 
   display: flex;
@@ -161,7 +160,7 @@
 
   position: absolute;
   z-index: 1;
-  top: 240px;
+  top: 250px;
   left: 50px;
 
   width: 100%;
@@ -179,7 +178,7 @@
 
   position: absolute;
   z-index: 1;
-  top: 290px;
+  top: 300px;
   left: 100px;
 
   width: 100%;
@@ -219,14 +218,16 @@
 
 .contentRight {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .serviceGridCards {
-  display: grid;
   position: relative;
+
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
   width: 100%;
-  gap: 30px;
   max-width: 700px;
+  margin: 0;
 }

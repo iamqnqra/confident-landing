@@ -1,6 +1,6 @@
 import styles from "./ServiceList.module.css";
 import Container from "../../shared/UIkit/Container/Container";
-import { ServiceCard } from "./ServiceListCard";
+import { ServiceCard } from "./ServiceListCard/ServiceListCard";
 
 export const ServiceList = () => {
   return (
