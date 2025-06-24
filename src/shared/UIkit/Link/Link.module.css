@@ -1,0 +1,23 @@
+.link {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.serviceLink {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  margin: 0;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 140%;
+  color: #3366ff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

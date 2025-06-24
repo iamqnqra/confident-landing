@@ -1,0 +1,13 @@
+.socialContacts {
+  display: flex;
+  gap: 17px;
+  justify-content: space-between;
+
+  max-width: 215px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialContact {
+  list-style: none;
+}
