@@ -1,4 +1,5 @@
 import styles from "./ServiceListCard.module.css";
+import LinkWithArrow from "../../../shared/UIkit/Link/Link";
 
 const CardItem = [
   {
@@ -56,10 +57,7 @@ export const ServiceCard = () => {
             <div className={styles.cardTextArea}>
               <h3 className={styles.serviceName}>{card.title}</h3>
               <p className={styles.serviceDescrip}>{card.description}</p>
-              <a href={card.link} target="true" className={styles.serviceLink}>
-                learn More
-                <img src="./img/about/arrow.svg" alt="" aria-hidden="true" />
-              </a>
+              <LinkWithArrow href="#">LEARN MORE</LinkWithArrow>
             </div>
           </div>
         </div>

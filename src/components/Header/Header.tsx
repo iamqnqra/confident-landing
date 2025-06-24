@@ -19,7 +19,7 @@ export const Header = () => {
             <a
               href="https://www.google.com/maps/@51.134464,71.3981952,14z?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
               className={styles.headerLocation}
-              target="true"
+              target="_blank"
             >
               <img
                 src="./img/header/location.svg"

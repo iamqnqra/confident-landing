@@ -28,7 +28,7 @@ export const HeroSection = () => {
             <a
               href="https://www.youtube.com/"
               className={styles.playButton}
-              target="true"
+              target="_blank"
             >
               <img
                 src="./img/hero/play.svg"

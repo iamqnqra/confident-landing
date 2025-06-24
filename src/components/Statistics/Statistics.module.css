@@ -114,62 +114,24 @@
   letter-spacing: 0.02em;
 }
 
-.infoDescription1 {
+.infoDescription {
   position: absolute;
   z-index: 1;
   top: 53px;
+
+  font-family: var(--fm-plus-jakarta-sans);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.statgridContent:first-child .infoDescription {
   left: 20px;
-
-  font-family: var(--fm-plus-jakarta-sans);
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
 }
 
-.infoDescription2 {
-  position: absolute;
-  z-index: 1;
-  top: 53px;
-  left: 331px;
-
-  font-family: var(--fm-plus-jakarta-sans);
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.infoDescription3 {
-  position: absolute;
-  z-index: 1;
-  top: 53px;
-  left: 670px;
-
-  font-family: var(--fm-plus-jakarta-sans);
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-}
-
-.infoDescription4 {
-  position: absolute;
-  z-index: 1;
-  top: 53px;
-  left: 972px;
-
-  font-family: var(--fm-plus-jakarta-sans);
-  font-size: 19px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+.statgridContent:last-child .infoDescription {
+  right: 10px;
 }
