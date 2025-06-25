@@ -1,4 +1,4 @@
-import styles from "./Navbar.module.css";
+import styles from "./NavbarSection.module.css";
 import { Container } from "../../shared/UIkit/Container/Container";
 
 const LINKS = [

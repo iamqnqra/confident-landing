@@ -1,6 +1,6 @@
 import { Header } from "./components/Header/Header";
 import { HeroSection } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
+import { Navbar } from "./components/NavbarSection/NavbarSection";
 import { Partner } from "./components/Partner/Partner";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 import { ServiceList } from "./components/ServiceList/ServiceList";
