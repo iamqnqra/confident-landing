@@ -93,3 +93,10 @@ body {
   width: 100%;
   max-width: 186px;
 }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .headerLocation,
+  .headerContactPhone {
+    display: none;
+  }
+}

@@ -105,7 +105,8 @@
 }
 
 .horizontalLine {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin-top: 40px;
   border: 1px solid rgb(194, 209, 255);
   color: #c2d1ff;
