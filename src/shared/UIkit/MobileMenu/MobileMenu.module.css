@@ -1,0 +1,71 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 90vh;
+  background-color: #eaf6ff;
+  z-index: 1000;
+  padding: 20px 26px 0 72px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 480px;
+}
+
+.closeBtn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3366ff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 50px;
+}
+
+.menuItem {
+  border-bottom: 1px solid #c2d1ff;
+}
+
+.menuItem summary {
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  gap: 4px;
+}
+
+.contact {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menuButton {
+  display: flex;
+  justify-content: center;
+}
+
+.appointmentButton {
+  max-width: 214px;
+}
