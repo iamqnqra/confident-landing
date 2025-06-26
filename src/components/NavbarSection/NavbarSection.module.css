@@ -88,3 +88,15 @@
 
   background-color: #3366ff;
 }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+  }
+}

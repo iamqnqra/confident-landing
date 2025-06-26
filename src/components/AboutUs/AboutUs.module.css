@@ -377,3 +377,61 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .aboutUssectionBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 769px;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .headingMainText {
+    font-size: 37px;
+  }
+
+  .contentRight {
+    padding-top: 100px;
+  }
+
+  .aboutUsReadMorelink {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUssectionBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 769px;
+    margin: 0;
+    padding: 0 16px;
+  }
+
+  .headingMainText {
+    font-size: 37px;
+  }
+
+  .contentRight {
+    padding-top: 125px;
+  }
+
+  .aboutUsReadMorelink {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+  }
+
+  .contentItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+  }
+}

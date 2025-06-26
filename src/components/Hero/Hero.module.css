@@ -150,8 +150,95 @@
 }
 
 .contentRight {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 90%;
   overflow: hidden;
+}
+
+.contentRight img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .hero {
+    padding-top: 136px;
+  }
+  .heroContainer {
+    max-width: 625px;
+  }
+
+  .heroBody {
+    padding-bottom: 800px;
+  }
+
+  .headingMainText {
+    font-size: 58px;
+  }
+
+  .heroTextContent {
+    max-width: 625px;
+  }
+
+  .heroContentButtons {
+    top: 70px;
+
+    display: flex;
+    gap: 30px;
+  }
+
+  .contentRight {
+    left: 0;
+    top: 467px;
+    height: auto;
+    width: auto;
+  }
+
+  .contentRight img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 136px;
+  }
+  .heroContainer {
+    max-width: 625px;
+  }
+
+  .heroBody {
+    padding-bottom: 600px;
+  }
+
+  .headingMainText {
+    font-size: 58px;
+  }
+
+  .heroTextContent {
+    max-width: 625px;
+  }
+
+  .contentRight {
+    left: 0;
+    top: 467px;
+    height: auto;
+    width: auto;
+  }
+
+  .heroContentButtons {
+    top: 50px;
+
+    display: flex;
+    gap: 30px;
+  }
+
+  .contentRight img {
+    max-width: 100%;
+    height: auto;
+  }
 }

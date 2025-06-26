@@ -17,9 +17,8 @@ export const Booking = () => {
                 </h2>
               </div>
               <p className={styles.headingDescription}>
-                Our team is dedicated to providing the best possible dental care
-                for you. A healthy smile is a happy smile – we help you achieve
-                both!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor <span className={styles.notVisibleText}> incididunt ut labore et dolore.</span>
               </p>
               <Button className={styles.bookNowButton}>
                 Book now

@@ -8,7 +8,7 @@ const CardItem = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     link: "#",
-    className: styles.serviceCardTop,
+    className: styles.serviceCard,
   },
   {
     imageSrc: "./img/service/card2.svg",
@@ -16,28 +16,28 @@ const CardItem = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     link: "#",
-    className: styles.serviceCardTop,
+    className: styles.serviceCard,
   },
   {
     imageSrc: "./img/service/card3.svg",
     title: "lawn fertilization",
     description: "Lorem ipsum dolor sit amet, consectetur.",
     link: "#",
-    className: styles.serviceCardBottom,
+    className: styles.serviceCard,
   },
   {
     imageSrc: "./img/service/card4.svg",
     title: "lawn fertilization",
     description: "Lorem ipsum dolor sit amet, consectetur.",
     link: "#",
-    className: styles.serviceCardBottom,
+    className: styles.serviceCard,
   },
   {
     imageSrc: "./img/service/card5.svg",
     title: "lawn fertilization",
     description: "Lorem ipsum dolor sit amet, consectetur.",
     link: "#",
-    className: styles.serviceCardBottom,
+    className: styles.serviceCard,
   },
 ];
 
@@ -56,7 +56,22 @@ export const ServiceCard = () => {
             />
             <div className={styles.cardTextArea}>
               <h3 className={styles.serviceName}>{card.title}</h3>
-              <p className={styles.serviceDescrip}>{card.description}</p>
+              <p className={styles.serviceDescrip}>
+                {index === 1 ? (
+                  <>
+                    <span className={styles.firstSpan}>
+                      Lorem ipsum dolor sit amet, consectetur.{" "}
+                    </span>
+                    <span className={styles.secondSpan}>
+                      Adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore.
+                    </span>
+                  </>
+                ) : (
+                  card.description
+                )}
+              </p>
+
               <LinkWithArrow href="#">LEARN MORE</LinkWithArrow>
             </div>
           </div>

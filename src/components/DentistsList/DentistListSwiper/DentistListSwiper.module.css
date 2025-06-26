@@ -86,7 +86,7 @@
 
   position: absolute;
   z-index: 10;
-  top: 4173.02px;
+  top: 440px;
   transform: translateY(-50%);
 
   display: flex;
@@ -103,11 +103,11 @@
 }
 
 .swiperButtonPrev {
-  left: 158px;
+  left: 0px;
 }
 
 .swiperButtonNext {
-  right: 158px;
+  right: 0px;
 }
 
 .swiperButtonPrev::before,

@@ -73,3 +73,45 @@
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .blogContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 42px 72px 120px 72px;
+  }
+  .headingSubText {
+    font-size: 37px;
+  }
+
+  .blogGridContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .blogBody {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 120px 32px;
+  }
+  .headingSubText {
+    font-size: 37px;
+  }
+
+  .blogGridContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .blogBody {
+    gap: 70px;
+  }
+}

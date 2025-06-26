@@ -7,7 +7,7 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0;
   padding: 120px 16px 0 16px;
 }
@@ -15,10 +15,12 @@
 .sectionBody {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 60px;
   align-items: center;
 
   max-width: 1200px;
+  width: 100%;
 }
 
 .partnerHeading {
@@ -39,8 +41,23 @@
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
+  width: 100%;
 }
 
 .partnerMarqueeItem {
   padding: 0 20px;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .sectionBody {
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  .partnerLogos {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    max-width: 715px;
+  }
 }

@@ -98,3 +98,10 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
+@media (max-width: 480px) {
+  .blogImageContent {
+    left: 30px;
+    bottom: 30px;
+  }
+}

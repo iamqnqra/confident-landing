@@ -1,11 +1,18 @@
-.serviceCardTop {
+.serviceCard:first-child {
   grid-column: span 3;
   padding: 30px 53px 26px 30px;
   border-radius: 15px;
   background-color: #fff;
 }
 
-.serviceCardBottom {
+.serviceCard:nth-child(2) {
+  grid-column: span 3;
+  padding: 30px 53px 26px 30px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.serviceCard {
   grid-column: span 2;
   padding: 30px 53px 26px 30px;
   border-radius: 15px;
@@ -62,4 +69,76 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+}
+
+@media (min-width: 480px) and (max-width: 769px) {
+  .serviceCard:first-child {
+    grid-column: span 4;
+    padding: 30px 65px 26px 30px;
+  }
+
+  .serviceCard:nth-child(2) {
+    grid-column: span 2;
+    padding: 30px 33px 30px 30px;
+  }
+
+  .serviceCard {
+    grid-column: span 2;
+    padding: 30px 33px 30px 30px;
+  }
+
+  .serviceCard:first-child .serviceName {
+    font-size: 19px;
+  }
+
+  .serviceName {
+    font-size: 15px;
+  }
+
+  .serviceCard:first-child .serviceDescrip {
+    font-size: 19px;
+  }
+
+  .serviceDescrip {
+    font-size: 15px;
+  }
+  .secondSpan {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCard:first-child {
+    grid-column: span 4;
+    padding: 30px 33px 26px 30px;
+  }
+
+  .serviceCard:nth-child(2) {
+    grid-column: span 4;
+    padding: 30px 33px 30px 30px;
+  }
+
+  .serviceCard {
+    grid-column: span 4;
+    padding: 30px 33px 30px 30px;
+  }
+
+  .serviceCard:first-child .serviceName {
+    font-size: 19px;
+  }
+
+  .serviceName {
+    font-size: 19px;
+  }
+
+  .serviceCard:first-child .serviceDescrip {
+    font-size: 19px;
+  }
+
+  .serviceDescrip {
+    font-size: 19px;
+  }
+  .secondSpan {
+    display: none;
+  }
 }
