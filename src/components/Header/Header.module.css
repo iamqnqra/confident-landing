@@ -37,6 +37,11 @@ body {
   padding: 0;
 }
 
+.headerBurger {
+  display: flex;
+  gap: 38px;
+}
+
 .headerLogo {
   cursor: pointer;
   margin: 0;
@@ -94,9 +99,74 @@ body {
   max-width: 186px;
 }
 
+.navSearchWrapper {
+  position: relative;
+}
+
+.navSearchInput {
+  position: relative;
+
+  max-width: 304px;
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 11px;
+  padding-left: 18px;
+  border: none;
+  border-radius: 82px;
+
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+
+  background: #ffffff;
+}
+
+.navSearchInput::placeholder {
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+  color: #a0b3e5;
+}
+
+.navSearchButton {
+  cursor: pointer;
+
+  position: absolute;
+  top: 5px;
+  right: 6px;
+
+  padding: 4px 7px;
+  border: none;
+  border-radius: 50px;
+
+  background-color: #3366ff;
+}
+
+@media screen and (min-width: 769px) {
+  .navSearchWrapper {
+    display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+
 @media (min-width: 480px) and (max-width: 769px) {
-  .headerLocation,
-  .headerContactPhone {
+  .headerContacts {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerContacts {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
     display: none;
   }
 }
