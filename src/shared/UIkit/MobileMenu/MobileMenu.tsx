@@ -16,11 +16,9 @@ const MENU_ITEMS = [
   },
   {
     title: "PAGES",
-    children: ["Page 1", "Page 2"],
   },
   {
     title: "BLOG",
-    children: ["Blog 1", "Blog 2"],
   },
   {
     title: "CONTACT",
@@ -54,11 +52,14 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
             <nav className={styles.nav}>
               {MENU_ITEMS.map((item) => (
                 <details key={item.title} className={styles.menuItem}>
-                  <summary>{item.title}</summary>
+                  <summary className={styles.menuSummary}>
+                    {item.title}
+                    {item.children && <span className={styles.arrow}></span>}
+                  </summary>
                   {item.children && (
                     <div className={styles.subMenu}>
                       {item.children.map((child) => (
-                        <a key={child} href="#">
+                        <a key={child} href="#" className={styles.subMenuLink}>
                           {child}
                         </a>
                       ))}
@@ -69,8 +70,38 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
             </nav>
 
             <div className={styles.contact}>
-              <span> St. Sanguin Number 40</span>
-              <span> +1234 – 4567 – 890</span>
+              <a
+                href="https://www.google.com/maps/@51.134464,71.3981952,14z?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D"
+                className={styles.headerLocation}
+                target="_blank"
+              >
+                <img
+                  src="./img/header/location.svg"
+                  width={19}
+                  height={24}
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span className={styles.headerLocationMean}>
+                  {" "}
+                  St. Sanguin Number 40
+                </span>
+              </a>
+              <a
+                href="tel:+1234 - 4567 - 890"
+                className={styles.headerContactPhone}
+              >
+                <img
+                  src="./img/header/phone.svg"
+                  width={19}
+                  height={19}
+                  alt=""
+                  aria-hidden="true"
+                />
+                <span className={styles.headerPhoneNumber}>
+                  +1234 - 4567 - 890
+                </span>
+              </a>
             </div>
             <div className={styles.menuButton}>
               <Button className={styles.appointmentButton}>Appointment</Button>

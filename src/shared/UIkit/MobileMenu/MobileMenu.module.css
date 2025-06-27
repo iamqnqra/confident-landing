@@ -3,10 +3,12 @@
   top: 0;
   left: 0;
   width: 60vw;
-  height: 90vh;
+  min-height: 105vh;
+  height: auto;
   background-color: #eaf6ff;
   z-index: 1000;
-  padding: 20px 26px 0 72px;
+  padding: 19px 65px 0 72px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -33,39 +35,144 @@
 .nav {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   justify-content: end;
-  gap: 50px;
 }
 
 .menuItem {
   border-bottom: 1px solid #c2d1ff;
+  padding-bottom: 10px;
+}
+
+.menuSummary:hover {
+  color: #3366ff;
 }
 
 .menuItem summary {
-  font-weight: bold;
-  font-size: 16px;
+  list-style: none;
+  font-family: var(--fm-plus-jakarta-sans);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
   cursor: pointer;
+  color: #304068;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid #304068;
+  border-right: 2px solid #304068;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  border-bottom: 2px solid #346cff;
+  border-right: 2px solid #346cff;
+}
+
+.menuItem[open] .arrow {
+  transform: rotate(-135deg);
 }
 
 .subMenu {
+  padding-left: 16px;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
-  padding-left: 16px;
-  gap: 4px;
+  gap: 8px;
+  font-family: var(--fm-dm-sans);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4c5d87;
+}
+
+.subMenuLink {
+  font-size: 15px;
+  text-decoration: none;
+  color: #142349;
+  padding: 4px 0;
+  transition: color 0.2s ease;
 }
 
 .contact {
-  font-size: 14px;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  display: flex;
+  gap: 40px;
+}
+
+.headerLocation {
+  cursor: pointer;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  max-width: 195px;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+.headerContactPhone {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+}
+
+.headerLocationMean,
+.headerPhoneNumber {
+  display: flex;
+
+  margin: 0;
+
+  font-family: var(--fm-dm-sans);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #142349;
+  letter-spacing: 0.02em;
+}
+
+.headerContacts {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .menuButton {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .appointmentButton {
   max-width: 214px;
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
