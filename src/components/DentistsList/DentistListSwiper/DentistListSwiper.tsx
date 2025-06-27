@@ -151,6 +151,11 @@ export const Slider = () => {
         centeredSlides
         loop
         initialSlide={1}
+        breakpoints={{
+          0: { slidesPerView: 1, centeredSlides: false },
+          480: { slidesPerView: 1, centeredSlides: false, spaceBetween: 38 },
+          769: { slidesPerView: 3 },
+        }}
       >
         {slideData.map((slide, index) => (
           <SwiperSlide key={index}>
