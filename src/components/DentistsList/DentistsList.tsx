@@ -1,5 +1,5 @@
 import styles from "./DentistsList.module.css";
-import { Slider } from "./DentistListSwiper/DentistLisSwiper";
+import { Slider } from "./DentistListSwiper/DentistListSwiper";
 import { Container } from "../../shared/UIkit/Container/Container";
 
 export const DentistList = () => {

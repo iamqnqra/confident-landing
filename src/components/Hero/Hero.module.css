@@ -11,8 +11,6 @@
 }
 
 .heroContainer {
-  position: relative;
-
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -23,7 +21,8 @@
 .heroBody {
   position: relative;
   margin: 0;
-  padding-bottom: 390px;
+  max-height: 100vh;
+  padding-bottom: 0px;
 }
 
 .heroTextContent {
@@ -152,8 +151,8 @@
 .contentRight {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0px;
+  position: relative;
+  top: -370px;
   left: 90%;
   overflow: hidden;
 }
@@ -163,16 +162,18 @@
   height: auto;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 770px) {
   .hero {
     padding-top: 136px;
   }
   .heroContainer {
     max-width: 625px;
+    padding: 0 72px;
   }
 
   .heroBody {
-    padding-bottom: 800px;
+    max-height: 130vh;
+    padding-bottom: 250px;
   }
 
   .headingMainText {
@@ -181,6 +182,8 @@
 
   .heroTextContent {
     max-width: 625px;
+    display: flex;
+    flex-direction: column;
   }
 
   .heroContentButtons {
@@ -192,7 +195,7 @@
 
   .contentRight {
     left: 0;
-    top: 467px;
+    top: 150px;
     height: auto;
     width: auto;
   }
@@ -212,20 +215,21 @@
   }
 
   .heroBody {
-    padding-bottom: 600px;
+    max-height: 130vh;
+    padding-bottom: 150px;
   }
 
   .headingMainText {
-    font-size: 58px;
+    font-size: 46px;
   }
 
   .heroTextContent {
-    max-width: 625px;
+    max-width: 416px;
   }
 
   .contentRight {
     left: 0;
-    top: 467px;
+    top: 105px;
     height: auto;
     width: auto;
   }

@@ -13,8 +13,8 @@ export const HeroSection = () => {
                 welcome to CONFIDENT
               </span>
               <span className={styles.headingMainText}>
-                high quality & <span className={styles.blueText}>painless</span>{" "}
-                dentistry
+                high quality & <br />
+                <span className={styles.blueText}>painless</span> dentistry
               </span>
             </h1>
             <p className={styles.heroDescription}>

@@ -39,6 +39,7 @@ body {
 
 .headerBurger {
   display: flex;
+  align-items: center;
   gap: 38px;
 }
 
@@ -101,12 +102,12 @@ body {
 
 .navSearchWrapper {
   position: relative;
+  max-width: 304px;
 }
 
 .navSearchInput {
   position: relative;
 
-  max-width: 304px;
   width: 100%;
   padding-top: 12px;
   padding-right: 18px;
@@ -153,15 +154,42 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 770px) {
   .headerContacts {
     display: none;
+  }
+
+  .container {
+    padding: 16px 72px 15px 72px;
+  }
+
+  .headerLogo img {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 141px;
+    height: 37px;
   }
 }
 
 @media (max-width: 480px) {
   .headerContacts {
     display: none;
+  }
+  .container {
+    padding: 16px 32px 15px 32px;
+  }
+  .headerLogo img {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 109px;
+    height: 28px;
+  }
+
+  .headerBurger {
+    display: flex;
+    gap: 25px;
   }
 }
 

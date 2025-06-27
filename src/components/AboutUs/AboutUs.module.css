@@ -9,7 +9,7 @@
   display: flex;
   width: 100%;
   margin: 0;
-  padding-top: 120px;
+  padding: 120px 16px 0 16px;
 }
 
 .aboutUssectionBody {
@@ -378,7 +378,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 770px) {
   .aboutUssectionBody {
     display: flex;
     flex-direction: column;
@@ -386,7 +386,7 @@
     width: 100%;
     max-width: 769px;
     margin: 0;
-    padding: 0 16px;
+    padding: 0 72px;
   }
 
   .headingMainText {

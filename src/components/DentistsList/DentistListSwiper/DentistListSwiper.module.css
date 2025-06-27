@@ -1,10 +1,14 @@
 .swiperContainer {
   align-self: center;
   max-width: 1036px;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 .swiperInit {
   padding-top: 40px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .swiperBox {
@@ -21,8 +25,8 @@
   flex-direction: column;
   flex-shrink: 0;
   align-items: center;
-
-  max-width: 290px;
+  max-width: 90vw;
+  width: 290px;
   height: 320px;
   margin: 0;
   padding: 15px;
@@ -144,4 +148,40 @@
 
 .socialIcons:hover > svg {
   background-color: #3366ff;
+}
+
+@media (max-width: 768px) {
+  .swiperContainer {
+    overflow: hidden;
+  }
+
+  .swiperCard {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .swiperInit {
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .swiperContainer {
+    overflow: hidden;
+  }
+
+  .swiperCard {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .swiperInit {
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
 }

@@ -10,6 +10,7 @@
   justify-content: center;
   margin: 0;
   padding: 120px 16px 0 16px;
+  overflow: hidden;
 }
 
 .sectionBody {
@@ -48,12 +49,12 @@
   padding: 0 20px;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 770px) {
   .sectionBody {
     align-items: center;
-    padding: 0 16px;
+    overflow: hidden;
   }
-  
+
   .partnerLogos {
     overflow: hidden;
     display: flex;

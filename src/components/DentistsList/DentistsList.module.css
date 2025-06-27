@@ -76,3 +76,50 @@
   min-width: 1200px;
   margin: 0 auto;
 }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .dentistsContainer {
+    padding: 120px 76px 0 76px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sectionBody {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sliderBox {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .headingMainText {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dentistsContainer {
+    padding: 139px 32px 0 32px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sectionBody {
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .sliderBox {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .headingMainText {
+    font-size: 37px;
+  }
+}

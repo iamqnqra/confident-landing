@@ -137,58 +137,114 @@
   right: 10px;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .statMainGrid {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
     gap: 96px 100px;
+    max-width: 100%;
   }
 
   .statBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-
-    padding: 80px 125px 80px 125px;
+    padding: 80px 125px;
+    gap: 60px;
   }
 
   .statgridContent {
-    z-index: 0;
-
+    position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    border-right: none;
-    border-bottom: 1px solid #c2d1ff;
-  }
-
-  .statgridContent:first-child {
-    z-index: 0;
-
-    display: flex;
     align-items: center;
-    justify-content: start;
-    border-right: none;
-  }
-
-  .statgridContent:last-child {
-    z-index: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    height: 140px;
+    border: none;
   }
 
   .gridInfoNumber {
-    position: relative;
+    font-size: 113px;
+    line-height: 1;
+    color: #8fe1fa;
+    text-align: center;
+    z-index: 0;
   }
 
   .infoDescription {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #142349;
     z-index: 1;
-    top: 0px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .statgridContent:first-child {
+    border-right: none;
+  }
+
+  .statgridContent:first-child .infoDescription,
+  .statgridContent:last-child .infoDescription {
+    left: 40%;
+    transform: translate(-50%, -20%);
+  }
+}
+
+@media (max-width: 480px) {
+  .statMainGrid {
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: 96px 100px;
+    max-width: 100%;
+  }
+
+  .statBody {
+    padding: 80px 35px;
+    gap: 60px;
+  }
+
+  .statgridContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    border: none;
+  }
+
+  .gridInfoNumber {
+    font-size: 113px;
+    line-height: 1;
+    color: #8fe1fa;
+    text-align: center;
+    z-index: 0;
+  }
+
+  .infoDescription {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #142349;
+    z-index: 1;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .statgridContent:first-child {
+    border-right: none;
+  }
+
+  .statgridContent:first-child .infoDescription,
+  .statgridContent:last-child .infoDescription {
+    left: 40%;
+    transform: translate(-50%, -20%);
   }
 }
