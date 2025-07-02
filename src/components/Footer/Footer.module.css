@@ -184,7 +184,6 @@
 
 .footerNav {
   display: flex;
-  gap: 40px;
   justify-content: space-between;
 
   padding-top: 20px;
@@ -236,4 +235,108 @@
   line-height: 20px;
   color: #142349;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+  .footerNav {
+    display: flex;
+    gap: 5px;
+
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+  .footerContainer {
+    margin: 0 auto;
+    padding: 60.5px 72px;
+  }
+
+  .socialItems {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .footerBottomLeft {
+    gap: 50px;
+    border-right: 2px solid #c2d1ff;
+    padding-right: 30px;
+  }
+
+  .workingHoursText {
+    font-size: 15px;
+  }
+
+  .dayMean {
+    font-size: 13px;
+  }
+
+  .timeMean {
+    font-size: 13px;
+  }
+
+  .footerBottomText {
+    font-size: 13px;
+  }
+
+  .footerNavLink {
+    font-size: 13px;
+  }
+  .footerNavGroup {
+    gap: 12px;
+  }
+
+  .footerNavTitle {
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 770px) {
+  .footerNav {
+    display: flex;
+    gap: 5px;
+
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+  .footerContainer {
+    margin: 0 auto;
+    padding: 60.5px 72px;
+  }
+
+  .footerBottomLeft {
+    gap: 50px;
+    border-right: 2px solid #c2d1ff;
+    padding-right: 30px;
+  }
+
+  .workingHoursText {
+    font-size: 15px;
+  }
+
+  .dayMean {
+    font-size: 13px;
+  }
+
+  .timeMean {
+    font-size: 13px;
+  }
+
+  .footerBottomText {
+    font-size: 13px;
+  }
+
+  .footerNavLink {
+    font-size: 13px;
+  }
+  .footerNavGroup {
+    gap: 12px;
+  }
+
+  .footerNavTitle {
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
 }

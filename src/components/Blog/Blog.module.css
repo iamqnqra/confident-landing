@@ -109,7 +109,7 @@
   .blogGridContent {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 30px;
   }
   .blogBody {
     gap: 70px;
