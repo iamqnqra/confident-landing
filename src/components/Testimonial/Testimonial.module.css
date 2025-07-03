@@ -67,25 +67,6 @@
 
 .blueText {
   color: #3366ff;
-  position: relative;
-}
-
-.blueText::after {
-  content: "";
-
-  position: absolute;
-  z-index: 0;
-  top: 140px;
-  left: 0px;
-
-  width: 100%;
-  max-width: 394.3px;
-  height: 409.1px;
-  border-radius: 100%;
-
-  opacity: 0.12;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
 }
 
 .headingMainText::after {
@@ -107,9 +88,28 @@
 }
 
 .contentWrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: start;
+}
+
+.contentWrapper::after {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+  top: 50px;
+  left: -5px;
+
+  width: 100%;
+  max-width: 400.3px;
+  height: 409.1px;
+  border-radius: 100%;
+
+  opacity: 0.12;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
 }
 
 .imageContent {
@@ -233,7 +233,7 @@
   margin: 0;
 }
 
-@media (min-width: 480px) and (max-width: 769px) {
+@media (min-width: 615px) and (max-width: 950px) {
   .testimonialContainer {
     flex-direction: column;
     align-items: center;
@@ -271,7 +271,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 192px;
+    gap: 280px;
   }
 
   .imageContent {
@@ -297,22 +297,8 @@
     background-color: #fff;
   }
 
-  .blueText::after {
-    content: "";
-
-    position: absolute;
-    z-index: 0;
-    top: 140px;
-    left: 0px;
-
-    width: 100%;
-    max-width: 400.3px;
-    height: 409.1px;
-    border-radius: 100%;
-
-    opacity: 0.12;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+  .contentWrapper::after {
+    display: none;
   }
 
   .headingMainText::before {
@@ -334,7 +320,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 615px) {
   .testimonialContainer {
     flex-direction: column;
     align-items: center;
@@ -345,6 +331,7 @@
   .testimonialBody {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 100px;
     width: 100%;
   }
@@ -398,24 +385,6 @@
     background-color: #fff;
   }
 
-  .blueText::after {
-    content: "";
-
-    position: absolute;
-    z-index: 0;
-    top: 140px;
-    left: 0px;
-
-    width: 100%;
-    max-width: 400.3px;
-    height: 409.1px;
-    border-radius: 100%;
-
-    opacity: 0.12;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
-  }
-
   .headingMainText::before {
     content: "";
 
@@ -432,5 +401,8 @@
     opacity: 0.38;
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+  }
+  .contentWrapper::after {
+    display: none;
   }
 }

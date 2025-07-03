@@ -6,6 +6,7 @@
 
   width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .dentistsContainer {
@@ -15,6 +16,7 @@
   width: 100%;
   margin: 0;
   padding: 120px 16px 0 16px;
+  overflow: hidden;
 }
 
 .sectionBody {
@@ -27,6 +29,7 @@
   width: 100%;
   max-width: 1200px;
   padding: 0;
+  overflow: hidden;
 }
 
 .heading {
@@ -77,11 +80,12 @@
   margin: 0 auto;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 770px) {
   .dentistsContainer {
     padding: 120px 76px 0 76px;
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
   }
 
   .sectionBody {
@@ -106,12 +110,14 @@
     padding: 139px 32px 0 32px;
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
   }
 
   .sectionBody {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
+    overflow: hidden;
   }
 
   .sliderBox {

@@ -74,13 +74,14 @@
   gap: 15px;
 }
 
-@media (min-width: 480px) and (max-width: 770px) {
+@media (min-width: 480px) and (max-width: 870px) {
   .blogContainer {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     padding: 42px 72px 120px 72px;
   }
+
   .headingSubText {
     font-size: 37px;
   }
@@ -104,6 +105,7 @@
   }
   .headingSubText {
     font-size: 37px;
+    max-width: 230px;
   }
 
   .blogGridContent {
@@ -111,7 +113,19 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
   .blogBody {
     gap: 70px;
+  }
+
+  .headingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+  }
+
+  .heading {
+    gap: 20px;
   }
 }

@@ -212,4 +212,146 @@
     height: 100%;
     object-fit: contain;
   }
+
+  .adContainer::before {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: -40px;
+    bottom: -20px;
+
+    width: 369px;
+    height: 373.3px;
+    border-radius: 50%;
+
+    opacity: 0.12;
+    background-color: #ffffff;
+  }
+
+  .adContainer::after {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: -10px;
+    bottom: 10px;
+
+    width: 303.4px;
+    height: 308.8px;
+    border-radius: 50%;
+
+    opacity: 0.2;
+    background-color: #ffffff;
+  }
+
+  .bookNowButton::after {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    bottom: -20px;
+    left: 365px;
+
+    width: 251.2px;
+    height: 248px;
+    border-radius: 50%;
+
+    opacity: 0.28;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookingContainer {
+    flex-direction: column;
+    padding: 80px 16px 0 16px;
+  }
+
+  .adContainer {
+    flex-direction: column;
+    padding: 80px 20px 0px 20px;
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+  }
+
+  .bookingOffer {
+    max-width: 305px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .heading {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .headingMain {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1;
+  }
+
+  .headingMainText {
+    font-size: 37px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .headingDescription {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+  .notVisibleText {
+    display: none;
+  }
+
+  .containerRight {
+    position: static;
+    margin-top: 32px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerRight img {
+    width: 100%;
+    max-width: 316px;
+    height: auto;
+  }
+
+  .adContainer::before {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: 35px;
+    bottom: -20px;
+
+    width: 369px;
+    height: 373.3px;
+    border-radius: 50%;
+
+    opacity: 0.2;
+    background-color: #ffffff;
+  }
+
+  .adContainer::after {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: 70px;
+    bottom: 10px;
+
+    width: 303.4px;
+    height: 308.8px;
+    border-radius: 50%;
+
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
 }

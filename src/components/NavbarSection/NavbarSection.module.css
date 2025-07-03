@@ -102,3 +102,71 @@
     display: none;
   }
 }
+
+@media (min-width: 955px) and (max-width: 1234px) {
+  .navElements {
+    display: flex;
+    gap: 30px;
+  }
+
+  .navSearchWrapper {
+    position: relative;
+    display: flex;
+    max-width: 270px;
+  }
+
+  .navSearchInput {
+    position: relative;
+
+    width: 304px;
+    padding-top: 12px;
+    padding-right: 18px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    border: none;
+    border-radius: 82px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+
+    background: #ffffff;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 955px) {
+  .navElements {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navSearchWrapper {
+    position: relative;
+    display: flex;
+    max-width: 270px;
+  }
+  .navBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+  }
+
+  .navSearchInput {
+    position: relative;
+
+    width: 200px;
+    padding-top: 12px;
+    padding-right: 18px;
+    padding-bottom: 11px;
+    padding-left: 18px;
+    border: none;
+    border-radius: 82px;
+
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+
+    background: #ffffff;
+  }
+}
