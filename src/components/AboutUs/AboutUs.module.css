@@ -378,7 +378,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 670px) and (max-width: 900px) {
+@media (min-width: 670px) and (max-width: 925px) {
   .aboutUssectionBody {
     display: flex;
     flex-direction: column;

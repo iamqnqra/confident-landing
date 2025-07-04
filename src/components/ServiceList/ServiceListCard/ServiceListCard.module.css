@@ -71,7 +71,7 @@
   letter-spacing: 0.15em;
 }
 
-@media (min-width: 480px) and (max-width: 770px) {
+@media (min-width: 480px) and (max-width: 900px) {
   .serviceCard:first-child {
     grid-column: span 4;
     padding: 30px 65px 26px 30px;

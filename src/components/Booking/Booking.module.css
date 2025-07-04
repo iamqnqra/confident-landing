@@ -355,3 +355,25 @@
     background-color: #ffffff;
   }
 }
+
+@media (min-width: 770px) and (max-width: 1044px) {
+  .adContainer::before {
+    content: "";
+
+    position: absolute;
+    z-index: 0;
+    right: 60px;
+    bottom: -20px;
+
+    width: 369px;
+    height: 373.3px;
+    border-radius: 50%;
+
+    opacity: 0.12;
+    background-color: #ffffff;
+  }
+
+  .bookNowButton::after {
+    display: none;
+  }
+}

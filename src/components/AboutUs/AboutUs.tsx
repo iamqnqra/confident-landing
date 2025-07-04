@@ -38,17 +38,17 @@ export const AboutUs = () => {
                 <div className={styles.trustedCardAvatars}>
                   <img
                     src="./img/about/avatar1.svg"
-                    alt="avatar"
+                    alt="first avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
                   <img
                     src="./img/about/avatar2.svg"
-                    alt="avatar"
+                    alt="second avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
                   <img
                     src="./img/about/avatar3.svg"
-                    alt="avatar"
+                    alt="third avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
                   <div className={styles.more}>+</div>

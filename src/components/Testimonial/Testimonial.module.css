@@ -124,14 +124,14 @@
   max-width: 472px;
 }
 
-.imageContentWrapper {
+.imageContentWrapperTop {
   position: absolute;
   z-index: 3;
   top: -55px;
   left: 140px;
 }
 
-.imageContentWrapper1 {
+.imageContentWrapperButtom {
   position: absolute;
   z-index: 3;
   right: 27px;
@@ -156,7 +156,7 @@
   box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.29);
 }
 
-.testimonialImage1 {
+.testimonialImageTop {
   position: relative;
   z-index: 2;
 
@@ -180,7 +180,7 @@
   left: 70px;
 }
 
-.testimonialImage2 {
+.testimonialImageBottom {
   position: relative;
   z-index: 2;
 
@@ -190,6 +190,11 @@
   justify-content: start;
 
   object-fit: cover;
+}
+
+.imageContentIcon1 {
+  position: relative;
+  left: 10px;
 }
 
 .headingMainText::before {
@@ -233,7 +238,7 @@
   margin: 0;
 }
 
-@media (min-width: 615px) and (max-width: 950px) {
+@media (min-width: 615px) and (max-width: 1040px) {
   .testimonialContainer {
     flex-direction: column;
     align-items: center;
@@ -244,7 +249,7 @@
   .testimonialBody {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
     width: 100%;
   }
 
@@ -276,8 +281,12 @@
 
   .imageContent {
     position: relative;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 700;
+    width: 100%;
     align-items: center;
+    gap: 20px;
   }
 
   .serviceGridCards {
@@ -318,6 +327,19 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
   }
+
+  .testimonialImageTop {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+
+    max-width: 700px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 615px) {
@@ -332,8 +354,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
-    width: 100%;
+    gap: 0px;
   }
 
   .heading {
@@ -359,13 +380,41 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 192px;
+    gap: 240px;
   }
 
   .imageContent {
     position: relative;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    width: 100%;
     align-items: center;
+    gap: 20px;
+  }
+
+  .imageContentIconTop {
+    position: relative;
+    left: -40px;
+  }
+
+  .imageContentIconBottom {
+    position: relative;
+    left: 40px;
+    top: -20px;
+  }
+
+  .testimonialImageTop {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    justify-content: end;
+
+    max-width: 400px;
+    width: 100%;
   }
 
   .serviceGridCards {
@@ -390,8 +439,8 @@
 
     position: absolute;
     z-index: 1;
-    top: 300px;
-    left: 100px;
+    top: 220px;
+    left: 80px;
 
     width: 100%;
     max-width: 194.7px;
@@ -402,6 +451,25 @@
     background-color: #ffffff;
     box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
   }
+
+  .headingMainText::after {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    left: 30px;
+
+    width: 100%;
+    max-width: 293.1px;
+    height: 299.6px;
+    border-radius: 100%;
+
+    opacity: 0.25;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.29);
+  }
+
   .contentWrapper::after {
     display: none;
   }

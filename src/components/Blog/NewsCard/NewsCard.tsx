@@ -12,7 +12,7 @@ export const NewsCard = () => {
             width={blog.imgWidth}
             height={blog.imgHeight}
             className={styles.card}
-            alt=""
+            alt="Background image for News Card"
           />
           <div className={styles.blogImageContent}>
             <time className={styles.date}>{blog.date}</time>

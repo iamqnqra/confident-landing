@@ -6,6 +6,9 @@ import { MobileMenu } from "../../shared/UIkit/MobileMenu/MobileMenu";
 export const Header = () => {
   return (
     <header className={styles.header}>
+      <a href="#testimonial" className={styles.skipLink}>
+        Skip to main content
+      </a>
       <Container className={styles.container}>
         <div className={styles.headerBody}>
           <div className={styles.headerBurger}>
@@ -66,7 +69,7 @@ export const Header = () => {
             <button className={styles.navSearchButton}>
               <img
                 src="./img/navbar/search_icon.svg"
-                alt="icon"
+                alt="search button icon"
                 width={19}
                 height={19}
               />

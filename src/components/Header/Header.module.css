@@ -24,6 +24,28 @@ body {
   background-color: #eff6ff;
 }
 
+.skipLink {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  background: #eff6ff;
+  color: #2952ce;
+  padding: 26px 16px;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+  border: none;
+  max-width: 96.7vw;
+  width: 100%;
+}
+
+.skipLink:focus {
+  top: 2px;
+}
+
 .container {
   padding: 16px 16px 15px 16px;
 }
@@ -145,39 +167,21 @@ body {
   background-color: #3366ff;
 }
 
-@media screen and (min-width: 770px) {
-  .navSearchWrapper {
-    display: none;
-  }
-  .mobileMenu {
+@media (max-width: 320px) {
+  body {
     display: none;
   }
 }
 
-@media (min-width: 480px) and (max-width: 770px) {
+@media (max-width: 481px) {
   .headerContacts {
     display: none;
   }
-  .navSearchWrapper {
-    width: 100%;
-  }
-  .container {
-    padding: 16px 72px 15px 72px;
-  }
 
-  .headerLogo img {
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    width: 141px;
-    height: 37px;
-  }
-}
-
-@media (max-width: 480px) {
-  .headerContacts {
+  .skipLink {
     display: none;
   }
+
   .container {
     padding: 16px 32px 15px 32px;
   }
@@ -195,9 +199,37 @@ body {
   }
 }
 
-@media (max-width: 320px) {
-  body {
+@media screen and (min-width: 770px) {
+  .navSearchWrapper {
     display: none;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 770px) {
+  .headerContacts {
+    display: none;
+  }
+
+  .skipLink {
+    display: none;
+  }
+
+  .navSearchWrapper {
+    width: 100%;
+  }
+  .container {
+    padding: 16px 72px 15px 72px;
+  }
+
+  .headerLogo img {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 141px;
+    height: 37px;
   }
 }
 
@@ -221,5 +253,22 @@ body {
     line-height: 20px;
     color: #142349;
     letter-spacing: 0.02em;
+  }
+
+  .skipLink {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    background: #eff6ff;
+    color: #2952ce;
+    padding: 26px 16px;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    border: none;
+    width: 95.7vw;
   }
 }
