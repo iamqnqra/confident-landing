@@ -16,6 +16,7 @@
     "@fontsource/montserrat": "^5.2.6",
     "@fontsource/plus-jakarta-sans": "^5.2.6",
     "@fontsource/source-serif-pro": "^5.2.5",
+    "classcat": "^5.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
