@@ -1,4 +1,5 @@
 import styles from "./Link.module.css";
+import cc from "classcat";
 
 type LinkWithArrowProps = {
   href: string;
@@ -16,7 +17,7 @@ export const LinkWithArrow = ({
       <a
         href={href}
         target="_blank"
-        className={`${styles.serviceLink} ${className || ""}`}
+        className={cc([styles.serviceLink, className])}
       >
         {children}
         <img

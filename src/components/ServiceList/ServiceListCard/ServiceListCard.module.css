@@ -34,7 +34,6 @@
 .serviceName {
   margin: 0;
 
-  font-family: var(--fm-plus-jakarta-sans);
   font-size: 19px;
   font-weight: 700;
   line-height: 1;
@@ -61,7 +60,6 @@
 
   max-width: 139px;
 
-  font-family: var(--fm-plus-jakarta-sans);
   font-size: 15px;
   font-weight: 600;
   line-height: 1;

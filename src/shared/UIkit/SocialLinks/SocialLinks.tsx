@@ -5,6 +5,8 @@ type SocialLink = {
   href: string;
   icon: React.ReactNode;
   className?: string;
+  ariaLabel: string;
+  title: string;
 };
 
 const socialData: SocialLink[] = [
@@ -29,6 +31,8 @@ const socialData: SocialLink[] = [
       </svg>
     ),
     className: styles.socialIcons,
+    ariaLabel: "instagram link",
+    title: "instagram",
   },
   {
     href: "https://www.facebook.com/",
@@ -51,6 +55,8 @@ const socialData: SocialLink[] = [
       </svg>
     ),
     className: styles.socialIcons,
+    ariaLabel: "facebook link",
+    title: "facebook",
   },
   {
     href: "https://ru.linkedin.com/",
@@ -73,6 +79,8 @@ const socialData: SocialLink[] = [
       </svg>
     ),
     className: styles.socialIcons,
+    ariaLabel: "linkedin link",
+    title: "linkedin",
   },
   {
     href: "https://x.com/",
@@ -95,6 +103,8 @@ const socialData: SocialLink[] = [
       </svg>
     ),
     className: styles.socialIcons,
+    ariaLabel: "twitter link",
+    title: "twitter",
   },
 ];
 
@@ -103,7 +113,13 @@ const SocialLinks = () => {
     <ul className={styles.socialContacts}>
       {socialData.map((contact) => (
         <li key={contact.href} className={styles.socialContact}>
-          <a href={contact.href} target="_blank" className={contact.className}>
+          <a
+            href={contact.href}
+            target="_blank"
+            aria-label={contact.ariaLabel}
+            title={contact.title}
+            className={contact.className}
+          >
             {contact.icon}
           </a>
         </li>
