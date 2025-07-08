@@ -1,35 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./MobileMenu.module.css";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { Button } from "../Button/Button";
-
-const MENU_ITEMS = [
-  {
-    title: "HOME",
-    children: ["Homepage 1", "Homepage 2"],
-  },
-  {
-    title: "ABOUT US",
-  },
-  {
-    title: "SERVICES",
-  },
-  {
-    title: "PAGES",
-  },
-  {
-    title: "BLOG",
-  },
-  {
-    title: "CONTACT",
-  },
-];
+import { MENU_ITEMS } from "./MobileMenu.constants";
 
 type MobileMenuProps = {
   className?: string;
 };
 export const MobileMenu = ({ className }: MobileMenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.height = "100vh";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.height = "";
+    }
+  }, [isOpen]);
 
   return (
     <div className={className}>

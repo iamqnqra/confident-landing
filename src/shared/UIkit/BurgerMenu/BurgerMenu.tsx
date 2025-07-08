@@ -1,12 +1,11 @@
+import styles from "./BurgerMenu.module.css";
+
 type BurgerMenuProps = {
   onClick: () => void;
 };
 
 export const BurgerMenu = ({ onClick }: BurgerMenuProps) => (
-  <button
-    onClick={onClick}
-    style={{ background: "none", border: "none", padding: 0 }}
-  >
+  <button onClick={onClick} className={styles.burgerMenuButton}>
     <svg
       width="27"
       height="17"
