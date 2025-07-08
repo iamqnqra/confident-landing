@@ -14,18 +14,20 @@ import { Footer } from "./components/Footer/Footer";
 export function App() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <HeroSection />
-      <Partner />
-      <AboutUs />
-      <ServiceList />
-      <Statistics />
-      <DentistList />
-      <Booking />
-      <Testimonial />
-      <Blog />
-      <Footer />
+      <main>
+        <Header />
+        <Navbar />
+        <HeroSection />
+        <Partner />
+        <AboutUs />
+        <ServiceList />
+        <Statistics />
+        <DentistList />
+        <Booking />
+        <Testimonial />
+        <Blog />
+        <Footer />
+      </main>
     </>
   );
 }
