@@ -42,7 +42,7 @@ export const HeroSection = () => {
 
           <div className={styles.contentRight}>
             <img
-              src="./img/hero/main_img.svg"
+              src="./img/hero/main_img.png"
               width={648}
               height={648}
               alt="doctor's characteristics"

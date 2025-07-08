@@ -1,12 +1,6 @@
 import styles from "./AboutUs.module.css";
 import { Container } from "../../shared/UIkit/Container/Container.tsx";
-
-const STRENGHS = [
-  "Modern Equipment",
-  "Comfortable Clinic",
-  "Easy Online Appointment",
-  "Always Monitored",
-];
+import { STRENGHS } from "./AboutUs.constants.ts";
 
 export const AboutUs = () => {
   return (

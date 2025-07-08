@@ -1,12 +1,6 @@
 import styles from "./Statistics.module.css";
 import { Container } from "../../shared/UIkit/Container/Container";
-
-const stats = [
-  { label: "Clinics", value: "74" },
-  { label: "Country", value: "20" },
-  { label: "Years", value: "19" },
-  { label: "Partners", value: "40" },
-];
+import { stats } from "./Statistics.constants";
 
 export const Statistics = () => {
   return (

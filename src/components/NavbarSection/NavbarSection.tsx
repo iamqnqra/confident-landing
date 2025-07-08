@@ -1,32 +1,6 @@
 import styles from "./NavbarSection.module.css";
 import { Container } from "../../shared/UIkit/Container/Container";
-
-const LINKS = [
-  {
-    label: "Home",
-    href: "#hero",
-  },
-  {
-    label: "About Us",
-    href: "#aboutUs",
-  },
-  {
-    label: "Services",
-    href: "#services",
-  },
-  {
-    label: "Pages",
-    href: "#dentists",
-  },
-  {
-    label: "Blog",
-    href: "#blog",
-  },
-  {
-    label: "Contact",
-    href: "#contact",
-  },
-];
+import { LINKS } from "./Navbar.constants";
 
 export const Navbar = () => {
   return (
@@ -52,10 +26,14 @@ export const Navbar = () => {
               placeholder="Search In here"
               className={styles.navSearchInput}
             />
-            <button className={styles.navSearchButton}>
+            <button
+              aria-label="Search button"
+              title="Search button"
+              className={styles.navSearchButton}
+            >
               <img
                 src="./img/navbar/search_icon.svg"
-                alt="icon"
+                aria-hidden
                 width={19}
                 height={19}
               />

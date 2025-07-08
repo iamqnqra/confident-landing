@@ -1,30 +1,7 @@
 import styles from "./Footer.module.css";
 import Container from "../../shared/UIkit/Container/Container";
 import SocialLinks from "../../shared/UIkit/SocialLinks/SocialLinks";
-
-const footerLinks = [
-  {
-    title: "About",
-    items: ["Home", "About Us", "Services", "Pages", "Contact"],
-  },
-  {
-    title: "Pages",
-    items: ["Services", "Dentist", "Pricing", "Contact", "404 Page"],
-  },
-  {
-    title: "Support",
-    items: ["Contact Us", "Booking online", "Social Media"],
-  },
-  {
-    title: "Contact Us",
-    items: ["Social Media", "WhatsApp", "Email"],
-  },
-];
-
-const workingHours = [
-  { day: "Mon – Fri", time: "9AM – 8PM" },
-  { day: "Sat – Sun", time: "9AM – 8PM" },
-];
+import { footerLinks, workingHours } from "./Footer.constant";
 
 export const Footer = () => {
   return (
@@ -48,7 +25,10 @@ export const Footer = () => {
                   placeholder="Your Email Here..."
                   className={styles.footerSearchInput}
                 />
-                <button className={styles.footerSearchButton}></button>
+                <button
+                  className={styles.footerSearchButton}
+                  aria-label="Submit button"
+                ></button>
               </div>
               <div className={styles.socialIcon}>
                 <SocialLinks />
