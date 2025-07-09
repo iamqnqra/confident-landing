@@ -1,13 +1,13 @@
-import styles from "./DentistListSwiper.module.css"
+import styles from "./DentistListSwiper.module.css";
 
 export const slideData = [
   {
-    imgSrc: "./img/dentists/first.svg",
+    imgSrc: "./img/dentists/first.png",
     name: "Dr. Marteen Bryant",
     status: "General dentist",
   },
   {
-    imgSrc: "./img/dentists/second.svg",
+    imgSrc: "./img/dentists/second.png",
     name: "Dr. Julia Barbarat",
     status: "General dentist",
     socialContacts: [
@@ -102,22 +102,22 @@ export const slideData = [
     ],
   },
   {
-    imgSrc: "./img/dentists/third.svg",
+    imgSrc: "./img/dentists/third.png",
     name: "Dr. Natasha smith",
     status: "General dentist",
   },
   {
-    imgSrc: "./img/dentists/first.svg",
+    imgSrc: "./img/dentists/first.png",
     name: "Dr. Marteen Bryant",
     status: "General dentist",
   },
   {
-    imgSrc: "./img/dentists/second.svg",
+    imgSrc: "./img/dentists/second.png",
     name: "Dr. Julia Barbarat",
     status: "General dentist",
   },
   {
-    imgSrc: "./img/dentists/third.svg",
+    imgSrc: "./img/dentists/third.png",
     name: "Dr. Natasha smith",
     status: "General dentist",
   },

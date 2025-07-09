@@ -18,7 +18,11 @@ export const Booking = () => {
               </div>
               <p className={styles.headingDescription}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor <span className={styles.notVisibleText}> incididunt ut labore et dolore.</span>
+                eiusmod tempor{" "}
+                <span className={styles.notVisibleText}>
+                  {" "}
+                  incididunt ut labore et dolore.
+                </span>
               </p>
               <Button className={styles.bookNowButton}>
                 Book now
@@ -33,9 +37,9 @@ export const Booking = () => {
             </div>
             <div className={styles.containerRight}>
               <img
-                src="./img/booking/doctor.svg"
-                width={390}
-                height={559}
+                src="./img/booking/doctor.png"
+                width={370}
+                height={550}
                 alt="image of doctor"
               />
             </div>

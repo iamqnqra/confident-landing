@@ -40,7 +40,7 @@ export const Testimonial = () => {
                   className={styles.checkbox}
                 />
                 <img
-                  src="./img/about/avatar2.svg"
+                  src="./img/testimonial/avatar2.png"
                   alt="first avatar of doctor"
                   width={95.5}
                   height={98.5}
@@ -50,7 +50,7 @@ export const Testimonial = () => {
 
               <div className={styles.testimonialImageBottom}>
                 <img
-                  src="./img/about/avatar3.svg"
+                  src="./img/testimonial/avatar1.png"
                   alt="avatar of second doctor"
                   width={88.7}
                   height={91.8}

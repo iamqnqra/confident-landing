@@ -11,9 +11,9 @@ export const AboutUs = () => {
             <div className={styles.aboutUsgradient}>
               <img
                 className={styles.aboutUsimage}
-                src="./img/about/main2.svg"
-                width={309}
-                height={530}
+                src="./img/about/main2.png"
+                width={310}
+                height={490}
                 alt="doctor-woman"
               />
               <div className={styles.imageCard}>
@@ -31,17 +31,17 @@ export const AboutUs = () => {
               <div className={styles.imageTrustedCard}>
                 <div className={styles.trustedCardAvatars}>
                   <img
-                    src="./img/about/avatar1.svg"
+                    src="./img/about/avatar1.png"
                     alt="first avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
                   <img
-                    src="./img/about/avatar2.svg"
+                    src="./img/about/avatar2.png"
                     alt="second avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
                   <img
-                    src="./img/about/avatar3.svg"
+                    src="./img/about/avatar3.png"
                     alt="third avatar of doctor"
                     className={styles.trustedCardAvatar}
                   />
