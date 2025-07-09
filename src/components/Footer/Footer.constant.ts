@@ -1,4 +1,4 @@
-export const footerLinks = [
+export const FOOTER_LINKS = [
   {
     title: "About",
     items: ["Home", "About Us", "Services", "Pages", "Contact"],
@@ -17,7 +17,7 @@ export const footerLinks = [
   },
 ];
 
-export const workingHours = [
+export const WORKING_HOURS = [
   { day: "Mon – Fri", time: "9AM – 8PM" },
   { day: "Sat – Sun", time: "9AM – 8PM" },
 ];

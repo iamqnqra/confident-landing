@@ -1,7 +1,7 @@
 import styles from "./Footer.module.css";
 import Container from "../../shared/UIkit/Container/Container";
 import SocialLinks from "../../shared/UIkit/SocialLinks/SocialLinks";
-import { footerLinks, workingHours } from "./Footer.constant";
+import { FOOTER_LINKS, WORKING_HOURS } from "./Footer.constant";
 
 export const Footer = () => {
   return (
@@ -43,7 +43,7 @@ export const Footer = () => {
               <div className={styles.workingHours}>
                 <h4 className={styles.workingHoursText}>working hours</h4>
                 <dl className={styles.workDays}>
-                  {workingHours.map(({ day, time }) => (
+                  {WORKING_HOURS.map(({ day, time }) => (
                     <div className={styles.workDaysRow} key={day}>
                       <dt className={styles.dayMean}>{day}</dt>
                       <dd className={styles.timeMean}>{time}</dd>
@@ -56,7 +56,7 @@ export const Footer = () => {
               </p>
             </div>
             <div className={styles.footerNav}>
-              {footerLinks.map((section) => (
+              {FOOTER_LINKS.map((section) => (
                 <dl key={section.title} className={styles.footerNavGroup}>
                   <dt className={styles.footerNavTitle}>{section.title}</dt>
                   {section.items.map((item) => (

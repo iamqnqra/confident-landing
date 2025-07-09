@@ -1,11 +1,11 @@
 import { FaStar } from "react-icons/fa";
 import styles from "./TestimonialCard.module.css";
-import { testimonialCards } from "./TestimonialCard.constants";
+import { TESTIMONIAL_CARD } from "./TestimonialCard.constants";
 
 export const TestimonialCard = () => {
   return (
     <>
-      {testimonialCards.map((card, index) => (
+      {TESTIMONIAL_CARD.map((card, index) => (
         <div className={styles.card} key={index}>
           <img
             src={card.avatar}

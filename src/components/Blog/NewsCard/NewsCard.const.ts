@@ -1,4 +1,4 @@
-export const blogData = [
+export const BLOG_DATA = [
   {
     imgSrc: "./img/blog/card1.png",
     imgWidth: 592,

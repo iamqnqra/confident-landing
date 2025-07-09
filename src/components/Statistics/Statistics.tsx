@@ -1,6 +1,6 @@
 import styles from "./Statistics.module.css";
 import { Container } from "../../shared/UIkit/Container/Container";
-import { stats } from "./Statistics.constants";
+import { STATS } from "./Statistics.constants";
 
 export const Statistics = () => {
   return (
@@ -8,7 +8,7 @@ export const Statistics = () => {
       <Container className={styles.statContainer}>
         <div className={styles.statBody}>
           <div className={styles.statMainGrid}>
-            {stats.map((stat, index) => (
+            {STATS.map((stat, index) => (
               <div key={index} className={styles.statgridContent}>
                 <span className={styles.infoDescription}>{stat.label}</span>
                 <span className={styles.gridInfoNumber}>{stat.value}</span>

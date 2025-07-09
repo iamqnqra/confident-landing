@@ -1,6 +1,6 @@
 import styles from "./DentistListSwiper.module.css";
 
-export const slideData = [
+export const SLIDE_DATA = [
   {
     imgSrc: "./img/dentists/first.png",
     name: "Dr. Marteen Bryant",

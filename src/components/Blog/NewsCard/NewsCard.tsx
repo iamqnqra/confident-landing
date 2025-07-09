@@ -1,11 +1,11 @@
 import styles from "./NewsCard.module.css";
-import { blogData } from "./NewsCard.const";
+import { BLOG_DATA } from "./NewsCard.const";
 import LinkWithArrow from "../../../shared/UIkit/Link/Link";
 
 export const NewsCard = () => {
   return (
     <>
-      {blogData.map((blog, index) => (
+      {BLOG_DATA.map((blog, index) => (
         <div key={index} className={styles.newsCard}>
           <img
             src={blog.imgSrc}

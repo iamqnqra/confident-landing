@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "./DentistListSwiper.css";
 import "swiper/css";
 import "swiper/css/pagination";
-import { slideData } from "./DentistList.constants";
+import { SLIDE_DATA } from "./DentistList.constants";
 import styles from "./DentistListSwiper.module.css";
 
 import { Pagination, Navigation } from "swiper/modules";
@@ -36,7 +36,7 @@ export const Slider = () => {
           769: { slidesPerView: 3 },
         }}
       >
-        {slideData.map((slide, index) => (
+        {SLIDE_DATA.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className={`${styles.swiperCard} swiperCard`}>
               <img

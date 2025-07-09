@@ -1,4 +1,4 @@
-export const testimonialCards = [
+export const TESTIMONIAL_CARD = [
   {
     avatar: "./img/testimonial/avatar7.png",
     rating: 4,
